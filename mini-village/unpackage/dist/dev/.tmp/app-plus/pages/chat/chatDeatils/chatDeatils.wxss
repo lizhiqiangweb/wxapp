@@ -1,0 +1,172 @@
+.chat {
+  padding: 0 30rpx;
+}
+.chat .chatTab {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-around;
+          justify-content: space-around;
+  margin: 28rpx 0 0 0;
+}
+.chat .chatTab .chatItem text {
+  font-size: 34rpx;
+  color: #303030;
+  color: #999999;
+}
+.chat .activeLine {
+  width: 70rpx;
+  height: 10rpx;
+  display: block;
+  background: -webkit-linear-gradient(left, #ff564f 0%, #ffa493 99%);
+  background: linear-gradient(90deg, #ff564f 0%, #ffa493 99%);
+  border-radius: 5rpx;
+  position: relative;
+  margin: 0 0 71rpx 0;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+.chat .chatContent1 .contentItem {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  margin: 0 0 28rpx 0;
+  border-bottom: 1px solid #ededed;
+  padding: 0 0 32rpx 0;
+}
+.chat .chatContent1 .contentItem image {
+  width: 90rpx;
+  height: 90rpx;
+  border-radius: 50%;
+  display: block;
+  margin: 0 18rpx 0 0;
+}
+.chat .chatContent1 .contentItem .information {
+  width: 575rpx;
+}
+.chat .chatContent1 .contentItem .information .infoTop {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+}
+.chat .chatContent1 .contentItem .information .infoTop .name {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #303030;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.chat .chatContent1 .contentItem .information .infoTop .name .remakes {
+  font-size: 26rpx;
+  font-weight: 500;
+  color: #999999;
+  margin: 0 0 0 16rpx;
+}
+.chat .chatContent1 .contentItem .information .infoTop .name .noNews {
+  width: 34rpx;
+  height: 34rpx;
+  background: #f63333;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  line-height: 34rpx;
+  color: #fff;
+  position: relative;
+  top: -12rpx;
+}
+.chat .chatContent1 .contentItem .information .infoTop view {
+  font-size: 26rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #999999;
+}
+.chat .chatContent1 .contentItem .information .infoBottom text {
+  width: 525rpx;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.chat .chatContent2 .add {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  border-bottom: 1px solid #EDEDED;
+  padding: 0 0 32rpx 0;
+}
+.chat .chatContent2 .add .add_left {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.chat .chatContent2 .add .add_left image {
+  width: 90rpx;
+  height: 90rpx;
+  margin: 0 17rpx 0 0;
+}
+.chat .chatContent2 .add .add_left text {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #303030;
+}
+.chat .chatContent2 .add .addIcon {
+  width: 40rpx;
+  height: 40rpx;
+  margin: 0 30rpx 0 0;
+}
+.chat .chatContent2 .weChatBox .weChatItem {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  border-bottom: 1px solid #EDEDED;
+  padding: 0 0 32rpx 0;
+  margin: 28rpx 0 0 0;
+}
+.chat .chatContent2 .weChatBox .weChatItem .weChat_left {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.chat .chatContent2 .weChatBox .weChatItem .weChat_left image {
+  width: 90rpx;
+  height: 90rpx;
+  margin: 0 17rpx 0 0;
+  border-radius: 50%;
+  border: 1px solid #333;
+}
+.chat .chatContent2 .weChatBox .weChatItem .weChat_left text {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #666666;
+}
+.chat .chatContent2 .weChatBox .weChatItem .weChatIcon {
+  width: 110rpx;
+  height: 50rpx;
+  display: block;
+}
+

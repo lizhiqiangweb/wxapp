@@ -1,0 +1,10 @@
+
+.cu-form-group .title.data-v-cf02b58e {
+	min-width: calc(4em + 15px);
+}
+.bg-red.data-v-cf02b58e {
+	height: 88rpx;
+	background: rgba(246, 51, 51, 1);
+	border-radius: 10rpx;
+}
+

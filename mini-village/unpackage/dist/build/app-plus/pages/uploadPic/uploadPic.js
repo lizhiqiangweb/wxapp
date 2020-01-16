@@ -1,0 +1,2 @@
+setCssToHead([".",[1],"cu-form-group .",[1],"title.",[1],"data-v-0eb2e206 { min-width: calc(4em + 15px); }\n.",[1],"bg-red.",[1],"data-v-0eb2e206 { height: ",[0,88],"; background: rgba(246, 51, 51, 1); border-radius: ",[0,10],"; }\n",],undefined,{path:"./pages/uploadPic/uploadPic.wxss"})();
+document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/uploadPic/uploadPic.wxml') } }));

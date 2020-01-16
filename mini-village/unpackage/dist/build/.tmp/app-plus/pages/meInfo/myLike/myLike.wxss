@@ -1,0 +1,338 @@
+/* rest */
+
+.mcolor {
+	color: #f44336;
+}
+
+.background-cover {
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+
+.inline-block{
+	display: inline-block;
+}
+
+.block{
+	display: block;
+}
+
+page,
+._ul,
+._p,
+._h1,
+._h2,
+._h3,
+._h4,
+._h5 {
+	margin: 0;
+	padding: 0;
+}
+
+._li {
+	list-style: none;
+}
+
+._a,
+._a:visited {
+	text-decoration: none;
+	/* color: #195d92; */
+}
+
+/* 浮动 */
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.flexs {
+	display: -moz-box;
+	display: -webkit-box;
+	enter display: -webkit-flex;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+}
+
+.flex1 {
+	-ms-flex: 1;
+	-moz-flex: 1;
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	flex: 1;
+}
+
+.justify-between {
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	
+}
+
+.justify-center {
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	justify-items: center;
+}
+
+.justify-start {
+	-webkit-box-pack: start;
+	-webkit-justify-content: flex-start;
+	    -ms-flex-pack: start;
+	        justify-content: flex-start;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+
+.flex-direction{
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+}
+
+page {
+	font-family: "Helvetica Neue", Helvetica, Tahoma, Arial, "PingFang SC",
+		"Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei",
+		sans-serif;
+	/* font-size: 14upx; */
+	-webkit-text-size-adjust: 100%;
+	-webkit-tap-highlight-color: transparent;
+	line-height: 1.2;
+	color: #666;
+	-webkit-overflow-scrolling: touch;
+}
+
+.font-28{
+font-size:28rpx;
+font-family:PingFang-SC-Bold;
+font-weight:bold;
+color:#303030;
+}
+
+.font-24 {
+	font-size: 24rpx;
+	font-family: PingFang-SC-Medium;
+	font-weight: 500;
+}
+
+.font-26{
+font-size:26rpx;
+font-family:PingFang-SC-Medium;
+color:#303030;
+}
+
+._img {
+	height: auto;
+	width: 100%;
+}
+
+.red{
+	color: #F44336;
+}
+
+._select {
+	-webkit-appearance: none;
+}
+
+._select :focus {
+	outline: 0;
+	-webkit-tap-highlight-color: transparent;
+}
+
+/*移动端好看的字体*/
+
+/* body{
+        font-family:Tahoma,Arial,Roboto,"Droid Sans","Helvetica Neue","Droid Sans Fallback","Heiti SC",sans-self;
+    } */
+
+/*IOS下移除按钮原生样式 -webkit-appearance*/
+
+input[type="button"] {
+	-webkit-appearance: none;
+	outline: none;
+}
+
+/*去除点击按钮，有灰色阴影*/
+
+._a,
+button,
+input {
+	outline: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/*placeholder属性*/
+
+/*
+     ::-webkit-input-placeholder {
+        color: mediumvioletred;
+        text-indent: 5px;
+    } */
+
+@media only screen and (device-width: 3.75rem) and (device-height: 8.12rem) and (-webkit-device-pixel-ratio: 3) {
+	.iphonex {
+		padding-top: 0.44rem;
+		padding-bottom: 0.34rem;
+	}
+
+	.iphonex:before {
+		content: "";
+		display: block;
+		position: fixed;
+		width: 100%;
+		height: 0.44rem;
+		background-color: #000;
+		top: 0;
+		left: 0;
+		z-index: 9999;
+	}
+
+	.iphonex:after {
+		content: "";
+		display: block;
+		position: fixed;
+		width: 100%;
+		height: 0.34rem;
+		bottom: 0;
+		left: 0;
+		z-index: 9999;
+	}
+}
+
+
+page {
+	background-color: #F5F5F5 !important;
+}
+
+.chat-list.data-v-feeb4aee {
+  position: relative;
+  padding-top: 20rpx;
+}
+.chat-list .chat-list-in.data-v-feeb4aee {
+  margin-bottom: 20rpx;
+  padding-bottom: 20rpx;
+}
+.chat-list .chat-list-in .chat-top.data-v-feeb4aee {
+  padding: 30rpx;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.chat-list .chat-list-in .chat-top .evaluate-msg-head-left.data-v-feeb4aee {
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.chat-list .chat-list-in .chat-top .evaluate-msg-head-left .head-pic.data-v-feeb4aee {
+  display: block;
+  width: 90rpx;
+  height: 90rpx;
+  border-radius: 50%;
+  margin-right: 20rpx;
+}
+.chat-list .chat-list-in .chat-top .evaluate-msg-head-left .head-info-name .head-info-nike.data-v-feeb4aee {
+  color: #303030;
+  font-size: 32rpx;
+  font-weight: 700;
+  position: relative;
+}
+.chat-list .chat-list-in .chat-top .evaluate-msg-head-left .head-info-name .head-info-nike .news.data-v-feeb4aee {
+  padding: 7rpx 10rpx;
+  background: #F63333;
+  border-radius: 50%;
+  font-size: 26rpx;
+  font-weight: normal;
+  color: #fff;
+  position: absolute;
+  top: -20rpx;
+  right: -20rpx;
+}
+.chat-list .chat-list-in .chat-top .evaluate-msg-head-left .head-info-name .head-info-nike-in.data-v-feeb4aee {
+  display: inline-block;
+  margin-left: 10rpx;
+  color: #999;
+  font-size: 26rpx;
+  font-weight: normal;
+}
+.chat-list .chat-list-in .chat-top .evaluate-msg-head-left .head-info-time.data-v-feeb4aee {
+  display: block;
+  margin-top: 20rpx;
+}
+.chat-list .chat-list-in .chat-top .chat-add.data-v-feeb4aee {
+  width: 40rpx;
+  height: 40rpx;
+}
+.chat-list .chat-list-in .content.data-v-feeb4aee {
+  padding: 40rpx 30rpx 20rpx 30rpx;
+  color: #303030;
+  font-size: 32rpx;
+  font-weight: 500;
+}
+.chat-list .chat-list-in .content-num.data-v-feeb4aee {
+  margin: 0 30rpx;
+  margin-right: 30rpx;
+}
+.chat-list .chat-list-in .content-num .content-num-left.data-v-feeb4aee {
+  min-width: 152rpx;
+  height: 152rpx;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.chat-list .chat-list-in .content-num .content-num-right.data-v-feeb4aee {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 152rpx;
+  padding-left: 20rpx;
+  padding-right: 40rpx;
+  background-color: #F5F5F5;
+  overflow: hidden;
+  /*超出部分隐藏*/
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  /* 超出部分显示省略号 */
+  white-space: wrap;
+  /*规定段落中的文本不进行换行 */
+}
+.chat-list .chat-list-in .content-num .content-num-right .content-num-right-in.data-v-feeb4aee {
+  width: 478rpx;
+  height: 50rpx;
+}
+

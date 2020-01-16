@@ -1,0 +1,335 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+		  	"path": "pages/entryLogin/entryLogin",
+		  	"style": {
+		  		"navigationBarTitleText": "授权登陆"
+		  	}
+		  },{
+			"path": "pages/evaluate/evaluate",
+			"style": {
+				"navigationBarTitleText": "评价"
+			}
+		},  {
+			"path": "pages/share/share",
+			"style": {
+				"navigationBarTitleText": "分享"
+			}
+		},{
+		    "path" : "pages/chat/villagerList/villagerList",
+		    "style": {
+		    	"navigationBarTitleText": "村民列表"
+		    }
+		},{
+			"path": "pages/chat/chatLine/chatLine",
+			"style": {
+				"navigationBarTitleText": "动态"
+			}
+		},{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "首页"
+			}
+		}, {
+		 	"path": "pages/me/me/me",
+		 	"style": {
+		 		"navigationBarTitleText": "我的"
+		 	}
+		}, {
+		  	"path": "pages/chat/chatDialogue/chatDialogue",
+		  	"style": {
+		  		"navigationBarTitleText": "聊天"
+		  	}
+		},{
+		  	"path": "pages/chat/chatDialogue/chatDialogue_q",
+		  	"style": {
+		  		"navigationBarTitleText": "聊天"
+		  	}
+		},{
+			"path": "pages/chat/publishDynamic/publishDynamic",
+			"style": {
+				"navigationBarTitleText": "发表动态"
+			}
+		}, {
+			"path": "pages/addHometown/addHometown",
+			"style": {
+				"navigationBarTitleText": "添加我的家乡"
+			}
+		}, {
+			"path": "pages/villageSet/applyVillager/applyVillager",
+			"style": {
+				"navigationBarTitleText": "申请村管理"
+			}
+		}, {
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "账户登陆"
+			}
+		}, {
+			"path": "pages/details/details",
+			"style": {
+				"navigationBarTitleText": "详情"
+			}
+		}, {
+			"path": "pages/chat/chatList/chatList",
+			"style": {
+				"navigationBarTitleText": "村聊",
+				"enablePullDownRefresh": true,  //设置为true表示当前页面开启下拉刷新
+                "backgroundTextStyle": "dark"  //下拉 loading 的样式，仅支持 dark/light
+			}
+		},  {
+			"path": "pages/serch/serch",
+			"style": {
+				"navigationBarTitleText": "搜索"
+			}
+		}, {
+			"path": "pages/serch/citySearch/citySearch",
+			"style": {
+				"navigationBarTitleText": "精确查找"
+			}
+		}, {
+			"path": "pages/meInfo/personInfo/personInfo",
+			"style": {
+				"navigationBarTitleText": "编辑资料"
+			}
+		}, {
+			"path": "pages/order/orderList/orderList",
+			"style": {
+				"navigationBarTitleText": "我的订单"
+			}
+		},{
+			"path": "pages/meInfo/villageNews/villageNews",
+			"style": {
+				"navigationBarTitleText": "村消息"
+			}
+		}, {
+			"path": "pages/meInfo/myLike/myLike",
+			"style": {
+				"navigationBarTitleText": "点赞我的"
+			}
+		}, {
+			"path": "pages/meInfo/myComment/myComment",
+			"style": {
+				"navigationBarTitleText": "评论我的"
+			}
+		}, {
+			"path": "pages/meInfo/newsList/newsList",
+			"style": {
+				"navigationBarTitleText": "消息列表"
+			}
+		}, {
+			"path": "pages/meInfo/fans/fans",
+			"style": {
+				"navigationBarTitleText": "粉丝"
+			}
+		}, {
+			"path": "pages/meInfo/attention/attention",
+			"style": {
+				"navigationBarTitleText": "关注"
+			}
+		}, {
+			"path": "pages/meInfo/nikeName/nikeName",
+			"style": {
+				"navigationBarTitleText": "修改昵称"
+			}
+		}, {
+			"path": "pages/search-in/search-in",
+			"style": {
+				"navigationBarTitleText": "搜索"
+			}
+		}, {
+			"path": "pages/ranking/ranking",
+			"style": {
+				"navigationBarTitleText": "村排名",
+				"navigationBarBackgroundColor": "#3c9ffc",
+				"backgroundColorTop": "#3c9ffc", //顶部窗口的背景色(IOS)
+				"navigationBarTextStyle": "white",
+				"app-plus": {
+					"titleNView": {
+						"type": "transparent",
+						"titleColor": "#fff",
+						"backgroundColor": "#3c9ffc"
+					}
+				}
+			}
+		}, {
+			"path": "pages/villageSet/villageLabel/villageLabel",
+			"style": {
+				"navigationBarTitleText": "乡村标签"
+			}
+		}, {
+			"path": "pages/villageSet/villageVideo/villageVideo",
+			"style": {
+				"navigationBarTitleText": "村头视频"
+			}
+		}, {
+			"path": "pages/villageSet/villageManager/villageManager",
+			"style": {
+				"navigationBarTitleText": "村务管理"
+			}
+		}, {
+			"path": "pages/voteList/voteList",
+			"style": {
+				"navigationBarTitleText": "为家乡打榜"
+			}
+		}, {
+			"path": "pages/contribution/contribution",
+			"style": {
+				"navigationBarTitleText": "赚贡献值"
+			}
+		}, {
+			"path": "pages/contributionDeatils/contributionDeatils",
+			"style": {
+				"navigationBarTitleText": "贡献值明细"
+			}
+		}, {
+			"path": "pages/uploadVideo/uploadVideo",
+			"style": {
+				"navigationBarTitleText": "添加视频"
+			}
+		}, {
+			"path": "pages/feature/feature",
+			"style": {
+				"navigationBarTitleText": "特色风采"
+			}
+		}, {
+			"path": "pages/addPic/addPic",
+
+			"style": {
+				"navigationBarTitleText": "添加图片"
+			}
+
+		}, {
+			"path": "pages/scenery/scenery",
+			"style": {
+				"navigationBarTitleText": "村景"
+			}
+		}, {
+			"path": "pages/uploadPic/uploadPic",
+			"style": {
+				"navigationBarTitleText": "上传村景"
+			}
+		}, {
+			"path": "pages/order/orderEvaluate/orderEvaluate",
+			"style": {
+				"navigationBarTitleText": "点评" //订单点评
+			}
+		}, {
+			"path": "pages/publishEvaluate/publishEvaluate",
+			"style": {
+				"navigationBarTitleText": "发表点评"
+			}
+		}, {
+			"path": "pages/villageIntroduce/villageIntroduce",
+			"style": {
+				"navigationBarTitleText": "村简介发表"
+			}
+
+		}, {
+			"path": "pages/villageSet/villagePic/villagePic",
+			"style": {
+				"navigationBarTitleText": "家乡封面"
+			}
+		}, {
+			"path": "pages/villageSet/villageIntroduce/villageIntroduce",
+			"style": {
+				"navigationBarTitleText": "编辑乡村简介"
+			}
+		}, {
+			"path": "pages/modal/homestayDetails/homestayDetails",
+			"style": {
+				"navigationBarTitleText": "民宿" //民宿详情
+			}
+		}, {
+			"path": "pages/modal/homestay/homestay",
+			"style": {
+				"navigationBarTitleText": "民宿"
+			}
+		}, 
+		{
+			"path": "pages/chat/chatDeatils/chatDeatils",
+			"style": {
+				"navigationBarTitleText": "村聊",
+				"navigationBarBackgroundColor":"#FFFFFF"
+			}
+		}
+	    
+        ,{
+            "path" : "pages/h5/h5",
+            "style": {
+            	"navigationBarTitleText": "网页浏览"
+            }
+        }
+        ,{
+            "path" : "pages/villageList/villageList",
+            "style" : {
+				"navigationBarTitleText": "他乡风情"
+			}
+        }
+        ,{
+            "path" : "pages/details/villageDynamic",
+            "style" : {
+				"navigationBarTitleText": "发布村动态"
+			}
+        }
+        ,{
+            "path" : "pages/homePage/myHomePage",
+            "style" : {
+				"navigationBarTitleText": "个人主页"
+			}
+        }
+        ,{
+            "path" : "pages/homePage/homePage",
+            "style" : {
+				"navigationBarTitleText": "个人主页"
+			}
+        }
+    ],
+	"tabBar": {
+		"color": "#666",
+		"selectedColor": "#F44336",
+		// "borderStyle": "black",
+		"backgroundColor": "#FFF",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"text": "首页",
+				"iconPath": "static/img/tab_icon-1@2x.png",
+				"selectedIconPath": "static/img/tab_icon-05@2x.png"
+			},
+			{
+				"pagePath": "pages/chat/chatLine/chatLine",
+				"text": "动态",
+				"iconPath": "static/img/tab_icon-2@2x.png",
+				"selectedIconPath": "static/img/tab_icon-06@2x.png"
+			},
+			{
+				"pagePath": "pages/chat/chatList/chatList",
+				"text": "村聊",
+				"iconPath": "static/img/tab_icon-3@2x.png",
+				"selectedIconPath": "static/img/tab_icon-07@2x.png"
+			},
+			{
+				"pagePath": "pages/me/me/me",
+				"text": "我的",
+				"iconPath": "static/img/tab_icon-4@2x.png",
+				"selectedIconPath": "static/img/tab_icon-08@2x.png"
+			}
+		]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"condition" : { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [
+			{
+				"name": "", //模式名称
+				"path": "", //启动页面，必选
+				"query": "" //启动参数，在页面的onLoad函数里面得到
+			}
+		]
+	}
+}

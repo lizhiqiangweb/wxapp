@@ -1,0 +1,13 @@
+page {
+  background-color: #F5F5F5;
+}
+
+.village-introduce .cu-form-group textarea.data-v-30567510 {
+  padding-top: 30rpx;
+  margin: 0;
+  height: 330rpx;
+}
+.village-introduce .submit.data-v-30567510 {
+  margin-top: 120rpx;
+}
+

@@ -1,0 +1,874 @@
+/* rest */
+
+.mcolor {
+	color: #f44336;
+}
+
+.background-cover {
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+
+.inline-block{
+	display: inline-block;
+}
+
+.block{
+	display: block;
+}
+
+page,
+._ul,
+._p,
+._h1,
+._h2,
+._h3,
+._h4,
+._h5 {
+	margin: 0;
+	padding: 0;
+}
+
+._li {
+	list-style: none;
+}
+
+._a,
+._a:visited {
+	text-decoration: none;
+	/* color: #195d92; */
+}
+
+/* 浮动 */
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.flexs {
+	display: -moz-box;
+	display: -webkit-box;
+	enter display: -webkit-flex;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+}
+
+.flex1 {
+	-ms-flex: 1;
+	-moz-flex: 1;
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	flex: 1;
+}
+
+.justify-between {
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	
+}
+
+.justify-center {
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	justify-items: center;
+}
+
+.justify-start {
+	-webkit-box-pack: start;
+	-webkit-justify-content: flex-start;
+	    -ms-flex-pack: start;
+	        justify-content: flex-start;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+
+.flex-direction{
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+}
+
+page {
+	font-family: "Helvetica Neue", Helvetica, Tahoma, Arial, "PingFang SC",
+		"Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei",
+		sans-serif;
+	/* font-size: 14upx; */
+	-webkit-text-size-adjust: 100%;
+	-webkit-tap-highlight-color: transparent;
+	line-height: 1.2;
+	color: #666;
+	-webkit-overflow-scrolling: touch;
+}
+
+.font-28{
+font-size:28rpx;
+font-family:PingFang-SC-Bold;
+font-weight:bold;
+color:#303030;
+}
+
+.font-24 {
+	font-size: 24rpx;
+	font-family: PingFang-SC-Medium;
+	font-weight: 500;
+}
+
+.font-26{
+font-size:26rpx;
+font-family:PingFang-SC-Medium;
+color:#303030;
+}
+
+._img {
+	height: auto;
+	width: 100%;
+}
+
+.red{
+	color: #F44336;
+}
+
+._select {
+	-webkit-appearance: none;
+}
+
+._select :focus {
+	outline: 0;
+	-webkit-tap-highlight-color: transparent;
+}
+
+/*移动端好看的字体*/
+
+/* body{
+        font-family:Tahoma,Arial,Roboto,"Droid Sans","Helvetica Neue","Droid Sans Fallback","Heiti SC",sans-self;
+    } */
+
+/*IOS下移除按钮原生样式 -webkit-appearance*/
+
+input[type="button"] {
+	-webkit-appearance: none;
+	outline: none;
+}
+
+/*去除点击按钮，有灰色阴影*/
+
+._a,
+button,
+input {
+	outline: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/*placeholder属性*/
+
+/*
+     ::-webkit-input-placeholder {
+        color: mediumvioletred;
+        text-indent: 5px;
+    } */
+
+@media only screen and (device-width: 3.75rem) and (device-height: 8.12rem) and (-webkit-device-pixel-ratio: 3) {
+	.iphonex {
+		padding-top: 0.44rem;
+		padding-bottom: 0.34rem;
+	}
+
+	.iphonex:before {
+		content: "";
+		display: block;
+		position: fixed;
+		width: 100%;
+		height: 0.44rem;
+		background-color: #000;
+		top: 0;
+		left: 0;
+		z-index: 9999;
+	}
+
+	.iphonex:after {
+		content: "";
+		display: block;
+		position: fixed;
+		width: 100%;
+		height: 0.34rem;
+		bottom: 0;
+		left: 0;
+		z-index: 9999;
+	}
+}
+
+page {
+  background-color: #F5F5F5;
+}
+
+.homestay-details.data-v-254174d4 {
+  font-size: 26rpx;
+  font-family: PingFang-SC-Regular;
+  font-weight: 400;
+  color: #000;
+  position: relative;
+}
+.homestay-details .homestay-details-top.data-v-254174d4 {
+  background-color: #fff;
+  margin-bottom: 20rpx;
+}
+.homestay-details .homestay-details-top .homestay-details-top-banner.data-v-254174d4 {
+  width: 100%;
+  height: 420rpx;
+  background-color: pink;
+}
+.homestay-details .homestay-details-top .homestay-details-top-msg.data-v-254174d4 {
+  padding: 35rpx 30rpx;
+}
+.homestay-details .homestay-details-top .homestay-details-top-msg .details-top-msg-title text.data-v-254174d4:first-of-type {
+  display: inline-block;
+  padding: 8rpx 12rpx;
+  background: #F44336;
+  border-radius: 4rpx;
+  color: #FFF;
+  text-align: center;
+  margin-right: 20rpx;
+}
+.homestay-details .homestay-details-top .homestay-details-top-msg .details-top-msg-title text.data-v-254174d4:last-of-type {
+  font-size: 38rpx;
+  color: #303030;
+  font-weight: 700;
+  letter-spacing: 2rpx;
+}
+.homestay-details .homestay-details-top .homestay-details-top-msg .details-top-msg-location.data-v-254174d4 {
+  margin-top: 17rpx;
+  color: #999;
+}
+.homestay-details .homestay-details-top .homestay-details-top-msg .details-top-msg-location text.data-v-254174d4 {
+  display: inline-block;
+  margin-right: 10rpx;
+}
+.homestay-details .homestay-details-top .homestay-details-top-msg .details-top-msg-evelatue.data-v-254174d4 {
+  margin-top: 43rpx;
+  margin-bottom: 30rpx;
+  color: #666;
+  font-size: 24rpx;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.homestay-details .homestay-details-top .homestay-details-top-msg .details-top-msg-evelatue .top-msg-evelatue-left .score.data-v-254174d4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-right: 30rpx;
+}
+.homestay-details .homestay-details-top .homestay-details-top-msg .details-top-msg-evelatue .top-msg-evelatue-left .score .star-item.data-v-254174d4 {
+  width: 22rpx;
+  height: 20rpx;
+  margin-right: 10rpx;
+}
+.homestay-details .homestay-details-top .homestay-details-top-msg .details-top-msg-evelatue .top-msg-evelatue-left .score .star-item.on.data-v-254174d4 {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAAdVBMVEUAAAD0RDX1Qjb0Qzb2Qjb/QTX0Qzb0Qzb1Qzb1QzXzQjX1Qzb1Qzb0Qzb0QzX0Qzb0Qzb0QzbzQjbzRTj0Qzb0Qzb0RDb0Qzb0RDX0Qzb0Qzb1QTjzQzbxQDn1Qzb1RDb0RDb0RDb0Qzb0Qzb2Qjb1RDf0QzaN9NvFAAAAJnRSTlMAQzD2HAa9spZ9KcbbhWhb5OFsE/DryLeLinBOPSTDqqaioHJRT2dQs3YAAAELSURBVDjLvdTZcsIwDEBRkcR7QsJeKHSv/v8T2zjbEFmteID76sOgGSuGB2et3CpEJcZLxKUYvyAGqS3wt40Qr1t8EuLQ4iCdIlaIcNXhSoRXHV5JbIZ9mQA/DfgowM2AG9EU/ByLWXrCen4GeENg5Na0+yiq31ofJDR46HLb/+jWwdjm42/7fr3ddc7TvCaLeeDsoQDaKW0/mZvWlGp292qKa+AqKS75hUuU8WtPO/IfH61hp5DPYacrc266UJuyajw3BUBhxl+m8PNwuh5evL5voL1hbO+hz+8x9spOUdGHLFfpKcozXHWOd/pFsEFEq8j/2fihzvKI+gKJLhrRz9+anQMmt1vAvfsBmllfsbCYYq4AAAAASUVORK5CYII=);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.homestay-details .homestay-details-top .homestay-details-top-msg .details-top-msg-evelatue .top-msg-evelatue-left .score .star-item.off.data-v-254174d4 {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAAaVBMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAnbPKNAAAAI3RSTlMAmQqSDgZ/bFgVjDMpiHpcR4+DcR51ZVYcGlJMOzYwIWFEPyo/BOUAAAGESURBVDjLvZXZcuowEER9JEvyvtvgBQz5/4+810AFEgbsPCR6sFVdpyRNa7rk/fXY/YA9EG9mTUpqtsIjUGxkfc2A9rfBOc5z5JvYPYReD/0WuGYxLqDewB4p1XLwkmQdrjhf/gV2lT1T3cyu+FhhVcnxNo2J1Fs06R7qaukSGQ/j0aUAzac0A6RuPIZ3zDRT0GoAdBvEj/2UZ1e9bIOpMRdDAYjcEIfijoOLAFjsVxkMif++W5IdZGqpymLVWm/Z/+x1VpG9p1WGXfa+0a15F4aWyr9XkVKb12xN6j/WHOHMK9aRfvWpj+hewB3R99ZuSk4ie6LcP4mzJhczpmdBTsB/Nhg5AwotqBrxChqsGJy9BMc4QXUcJbggENSAsyfLa0vIG+5XDudZboiZLHYyT2ULJqkiAiAt1GtDfcrlu9OQHczBgh78yxpCimYyrz8BdXK90Br0qfcss/Q0WAd099qaDnCWWPII9C78Gu1Ay49ATjSq54YZI3IBnowclI/A+/XxDzP2DypdwllhAAAAAElFTkSuQmCC);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.homestay-details .homestay-details-top .homestay-details-top-msg .details-top-msg-evelatue .top-msg-evelatue-right.data-v-254174d4 {
+  width: 42rpx;
+  height: 42rpx;
+}
+.homestay-details .homestay-details-top .homestay-details-top-msg .details-top-msg-evelatue .top-msg-evelatue-right image.data-v-254174d4 {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.homestay-details .homestay-details-top .homestay-details-top-msg .details-top-msg-room.data-v-254174d4 {
+  padding: 35rpx 0;
+  -webkit-box-flex: 4;
+  -webkit-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+  border-top: 1rpx solid #EDEDED;
+  border-bottom: 1rpx solid #EDEDED;
+}
+.homestay-details .homestay-details-top .homestay-details-top-msg .details-top-msg-room .top-msg-room-in.data-v-254174d4 {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.homestay-details .homestay-details-top .homestay-details-top-msg .details-top-msg-room .top-msg-room-in .top-msg-room-msg.data-v-254174d4 {
+  width: 60rpx;
+  height: 60rpx;
+  margin-bottom: 15rpx;
+}
+.homestay-details .homestay-details-top .homestay-details-top-msg .details-top-msg-introduce.data-v-254174d4 {
+  padding-top: 30rpx;
+}
+.homestay-details .homestay-details-top .homestay-details-top-msg .details-top-msg-introduce .top-msg-introduce-left.data-v-254174d4 {
+  font-size: 34rpx;
+}
+.homestay-details .homestay-details-top .homestay-details-top-msg .details-top-msg-introduce .top-msg-introduce-left .introduce-icon.data-v-254174d4 {
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 32rpx;
+}
+.homestay-details .homestay-details-top .homestay-details-top-msg .details-top-msg-introduce .top-msg-introduce-right.data-v-254174d4 {
+  font-size: 24rpx;
+  color: #999;
+}
+.homestay-details .homestay-details-mid.data-v-254174d4 {
+  background-color: #FFF;
+}
+.homestay-details .homestay-details-mid .details-mid-msg-introduce.data-v-254174d4 {
+  margin: 0 30rpx;
+  padding-top: 30rpx;
+}
+.homestay-details .homestay-details-mid .details-mid-msg-introduce .mid-msg-introduce-left.data-v-254174d4 {
+  font-size: 34rpx;
+}
+.homestay-details .homestay-details-mid .details-mid-msg-introduce .mid-msg-introduce-left .introduce-icon.data-v-254174d4 {
+  width: 90rpx;
+  height: 90rpx;
+  border-radius: 50%;
+  background-color: pink;
+  margin-right: 32rpx;
+}
+.homestay-details .homestay-details-mid .details-mid-msg-introduce .mid-msg-introduce-left .introduce-name .introduce-name-top.data-v-254174d4 {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.homestay-details .homestay-details-mid .details-mid-msg-introduce .mid-msg-introduce-left .introduce-name .introduce-name-top .roomer.data-v-254174d4 {
+  width: 56rpx;
+  height: 26rpx;
+  margin-left: 10rpx;
+}
+.homestay-details .homestay-details-mid .details-mid-msg-introduce .mid-msg-introduce-left .introduce-name .introduce-name-btm.data-v-254174d4 {
+  margin-top: 20rpx;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.homestay-details .homestay-details-mid .details-mid-msg-introduce .mid-msg-introduce-left .introduce-name .introduce-name-btm .introduce-name-btm-left.data-v-254174d4 {
+  font-size: 22rpx;
+  color: #666;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 4rpx;
+  margin-right: 38rpx;
+}
+.homestay-details .homestay-details-mid .details-mid-msg-introduce .mid-msg-introduce-left .introduce-name .introduce-name-btm .introduce-name-btm-left .phone.data-v-254174d4 {
+  width: 24rpx;
+  height: 24rpx;
+  margin-right: 7rpx;
+}
+.homestay-details .homestay-details-mid .details-mid-msg-introduce .mid-msg-introduce-right.data-v-254174d4 {
+  font-size: 24rpx;
+  color: #999;
+}
+.homestay-details .homestay-details-mid .details-mid-list.data-v-254174d4 {
+  margin: 0 30rpx;
+  padding: 0 30rpx;
+  font-size: 24rpx;
+  font-weight: bold;
+  color: #999;
+  margin-top: 30rpx;
+  padding: 80rpx 0;
+}
+.homestay-details .homestay-details-mid .details-mid-list .mid-list-title.data-v-254174d4 {
+  display: block;
+  font-size: 34rpx;
+  color: #303030;
+  margin-bottom: 50rpx;
+}
+.homestay-details .homestay-details-mid .details-mid-list .mid-list-msg.data-v-254174d4 {
+  padding: 30rpx 0;
+  border-bottom: 1rpx solid #EDEDED;
+}
+.homestay-details .homestay-details-mid .details-mid-list .mid-list-msg .mid-list-msg-top-left.data-v-254174d4 {
+  font-size: 32rpx;
+  color: #303030;
+}
+.homestay-details .homestay-details-mid .details-mid-list .mid-list-msg .mid-list-msg-top-left .mid-list-msg-top-left-mag.data-v-254174d4 {
+  color: #999;
+  font-size: 24rpx;
+  font-weight: normal;
+  margin-top: 15rpx;
+}
+.homestay-details .homestay-details-mid .details-mid-list .mid-list-msg .mid-list-msg-top-left .mid-list-msg-top-left-mag text.data-v-254174d4:nth-of-type(2n) {
+  display: inline-block;
+  margin: 0 10rpx;
+  padding: 0 20rpx;
+  border-left: 1rpx solid #EDEDED;
+  border-right: 1rpx solid #EDEDED;
+}
+.homestay-details .homestay-details-mid .details-mid-list .mid-list-msg .mid-list-msg-top-right.data-v-254174d4 {
+  width: 160rpx;
+  line-height: 60rpx;
+  color: #fff;
+  text-align: center;
+  background: #F44336;
+  border-radius: 30rpx;
+  font-weight: normal;
+  letter-spacing: 2rpx;
+}
+.homestay-details .homestay-details-mid .details-mid-list .mid-list-msg .mid-list-msg-btm.data-v-254174d4 {
+  color: #F44336;
+  font-size: 28rpx;
+  margin-top: 40rpx;
+}
+.homestay-details .homestay-details-mid .details-mid-list .mid-list-more.data-v-254174d4 {
+  text-align: center;
+  color: #F44336;
+  margin-top: 50rpx;
+}
+.homestay-details .homestay-details-mid .details-mid-list .mid-list-more text.data-v-254174d4 {
+  font-size: 28rpx;
+  display: inline-block;
+  margin-right: 10rpx;
+  color: #F44336;
+}
+.homestay-details .homestay-details-mid .details-mid-introduce.data-v-254174d4 {
+  margin-top: 0;
+  padding-top: 0;
+}
+.homestay-details .homestay-details-mid .details-mid-introduce .details-mid-introduce-p.data-v-254174d4 {
+  background-color: #F6F7F9;
+  padding: 47rpx 30rpx;
+  font-size: 26rpx;
+  font-family: PingFang-SC-Medium;
+  font-weight: 500;
+  color: #666;
+}
+.homestay-details .homestay-details-mid .details-mid-service .details-top-msg-room.data-v-254174d4 {
+  padding: 35rpx 0;
+  -webkit-box-flex: 5;
+  -webkit-flex: 5;
+      -ms-flex: 5;
+          flex: 5;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+.homestay-details .homestay-details-mid .details-mid-service .details-top-msg-room .top-msg-room-in.data-v-254174d4 {
+  width: 20%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 40rpx;
+}
+.homestay-details .homestay-details-mid .details-mid-service .details-top-msg-room .top-msg-room-in .top-msg-room-msg.data-v-254174d4 {
+  width: 60rpx;
+  height: 60rpx;
+  margin-bottom: 15rpx;
+}
+.homestay-details .homestay-details-mid .details-mid-adress.data-v-254174d4 {
+  margin: 0;
+}
+.homestay-details .homestay-details-mid .details-mid-adress .mid-list-title.data-v-254174d4 {
+  margin: 0 30rpx;
+}
+.homestay-details .homestay-details-mid .details-mid-adress .adress.data-v-254174d4 {
+  margin: 0;
+  margin-top: 30rpx;
+  padding-top: 30rpx;
+  height: 400rpx;
+  background-color: pink;
+}
+.homestay-details .homestay-details-mid .details-mid-adress .adress .details-top-msg-introduce.data-v-254174d4 {
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 0 30rpx;
+  padding: 20rpx;
+  background-color: #FFF;
+}
+.homestay-details .homestay-details-mid .details-mid-adress .adress .details-top-msg-introduce .top-msg-introduce-left.data-v-254174d4 {
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  font-size: 28rpx;
+}
+.homestay-details .homestay-details-mid .details-mid-adress .adress .details-top-msg-introduce .top-msg-introduce-left .locationfill-font.data-v-254174d4 {
+  width: 370rpx;
+  margin-left: 10rpx;
+}
+.homestay-details .homestay-details-mid .details-mid-adress .adress .details-top-msg-introduce .top-msg-introduce-right.data-v-254174d4 {
+  font-size: 24rpx;
+  color: #4D97FF;
+}
+.homestay-details .homestay-details-mid .details-mid-evelate .top.data-v-254174d4 {
+  color: #303030;
+  font-size: 34rpx;
+  margin-bottom: 50rpx;
+}
+.homestay-details .homestay-details-mid .details-mid-evelate .top .title-right.data-v-254174d4 {
+  color: #666;
+  font-size: 26rpx;
+  font-weight: normal;
+}
+.homestay-details .homestay-details-mid .details-mid-evelate .evaluate-msg-in.data-v-254174d4 {
+  font-size: 26rpx;
+  font-family: PingFang-SC-Medium;
+  font-weight: 500;
+  color: #666666;
+}
+.homestay-details .homestay-details-mid .details-mid-evelate .evaluate-msg-in .evaluate-msg-head-left.data-v-254174d4 {
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.homestay-details .homestay-details-mid .details-mid-evelate .evaluate-msg-in .evaluate-msg-head-left .head-pic.data-v-254174d4 {
+  display: block;
+  width: 90rpx;
+  height: 90rpx;
+  background-color: pink;
+  border-radius: 50%;
+  margin-right: 20rpx;
+}
+.homestay-details .homestay-details-mid .details-mid-evelate .evaluate-msg-in .evaluate-msg-head-left .head-info-nike.data-v-254174d4 {
+  color: #303030;
+  font-size: 32rpx;
+  font-weight: 700;
+}
+.homestay-details .homestay-details-mid .details-mid-evelate .evaluate-msg-in .evaluate-msg-head-left .head-info-time.data-v-254174d4 {
+  display: block;
+  margin-top: 20rpx;
+}
+.homestay-details .homestay-details-mid .details-mid-evelate .evaluate-msg-in .evaluate-msg-btm .evaluate-msg-btm-p.data-v-254174d4 {
+  margin: 40rpx 0rpx;
+  font-size: 26rpx;
+  letter-spacing: 2rpx;
+  line-height: 40rpx;
+  margin-bottom: 20rpx;
+}
+.homestay-details .homestay-details-mid .details-mid-evelate .evaluate-msg-in .evaluate-msg-btm .evaluate-msg-btm-pic.data-v-254174d4 {
+  -webkit-box-flex: 4;
+  -webkit-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+.homestay-details .homestay-details-mid .details-mid-evelate .evaluate-msg-in .evaluate-msg-btm .evaluate-msg-btm-pic .evaluate-msg-btm-pic-in.data-v-254174d4 {
+  width: 22%;
+  height: 152rpx;
+  border-radius: 8rpx;
+  background-color: red;
+  margin-right: 20rpx;
+}
+.homestay-details .homestay-details-mid .details-mid-evelate .evaluate-msg-in .evaluate-msg-btm .evaluate-msg-btm-pic .evaluate-msg-btm-pic-in.data-v-254174d4:nth-of-type(4n) {
+  margin-right: 0;
+}
+.homestay-details .homestay-details-mid .details-mid-evelate .evaluate-msg-in .evaluate-msg-btm .evaluate-msg-btm-select.data-v-254174d4 {
+  margin-top: 60rpx;
+  color: #333333;
+}
+.homestay-details .homestay-details-mid .details-mid-evelate .evaluate-msg-in .evaluate-msg-btm .evaluate-msg-btm-select .details-top-msg-introduce.data-v-254174d4 {
+  padding: 30rpx 0;
+  border-top: 1rpx solid #EDEDED;
+}
+.homestay-details .homestay-details-mid .details-mid-evelate .evaluate-msg-in .evaluate-msg-btm .evaluate-msg-btm-select .details-top-msg-introduce .top-msg-introduce-left.data-v-254174d4 {
+  font-size: 34rpx;
+}
+.homestay-details .homestay-details-mid .details-mid-evelate .evaluate-msg-in .evaluate-msg-btm .evaluate-msg-btm-select .details-top-msg-introduce .top-msg-introduce-left .introduce-icon.data-v-254174d4 {
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 32rpx;
+}
+.homestay-details .homestay-details-mid .details-mid-evelate .evaluate-msg-in .evaluate-msg-btm .evaluate-msg-btm-select .details-top-msg-introduce .top-msg-introduce-right.data-v-254174d4 {
+  font-size: 24rpx;
+  color: #999;
+}
+.homestay-details .homestay-details-mid .details-mid-goods .goods-list-left.data-v-254174d4 {
+  width: 180rpx;
+  height: 180rpx;
+  border-radius: 4rpx;
+  background-color: red;
+  margin-right: 24rpx;
+}
+.homestay-details .homestay-details-mid .details-mid-goods .goods-list-right.data-v-254174d4 {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.homestay-details .homestay-details-mid .details-mid-goods .goods-list-right .goods-list-right-top .title.data-v-254174d4 {
+  color: #010101;
+  font-size: 30rpx;
+}
+.homestay-details .homestay-details-mid .details-mid-goods .goods-list-right .goods-list-right-top .title-msg.data-v-254174d4 {
+  margin-top: 12rpx;
+}
+.homestay-details .homestay-details-mid .details-mid-goods .goods-list-right .goods-list-right-top .title-msg text.data-v-254174d4 {
+  display: inline-block;
+}
+.homestay-details .homestay-details-mid .details-mid-goods .goods-list-right .goods-list-right-top .title-msg text.data-v-254174d4:first-of-type {
+  padding: 7rpx 10rpx;
+  color: #F99D0C;
+  margin-right: 20rpx;
+  border: 1rpx solid #F99D0C;
+}
+.homestay-details .homestay-details-mid .details-mid-goods .goods-list-right .goods-list-right-btm .red text.data-v-254174d4:last-of-type {
+  font-size: 42rpx;
+}
+.homestay-details .homestay-details-mid .details-mid-house .scroll-view_H.data-v-254174d4 {
+  white-space: nowrap;
+  width: 100%;
+  margin: 0 auto;
+}
+.homestay-details .homestay-details-mid .details-mid-house .scroll-view_H .homestay-list.data-v-254174d4 {
+  width: 90%;
+  display: inline-block;
+  border-radius: 8rpx 8rpx 0rpx 0rpx;
+}
+.homestay-details .homestay-details-mid .details-mid-house .scroll-view_H .homestay-list .homestay-list-in.data-v-254174d4 {
+  background-color: #fff;
+  margin-bottom: 30rpx;
+}
+.homestay-details .homestay-details-mid .details-mid-house .scroll-view_H .homestay-list .homestay-list-in .homestay-list-in-pic.data-v-254174d4 {
+  width: 100%;
+  height: 386rpx;
+  position: relative;
+}
+.homestay-details .homestay-details-mid .details-mid-house .scroll-view_H .homestay-list .homestay-list-in .homestay-list-in-pic .homestay-head.data-v-254174d4 {
+  width: 98rpx;
+  height: 98rpx;
+  border-radius: 50%;
+  background-color: red;
+  position: absolute;
+  bottom: -40rpx;
+  right: 10rpx;
+  border: 5rpx solid #fff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.homestay-details .homestay-details-mid .details-mid-house .scroll-view_H .homestay-list .homestay-list-in .homestay-list-in-pic .homestay-list-collect.data-v-254174d4 {
+  padding: 20rpx;
+}
+.homestay-details .homestay-details-mid .details-mid-house .scroll-view_H .homestay-list .homestay-list-in .homestay-list-in-pic .homestay-list-collect .collect-left.data-v-254174d4 {
+  width: 160rpx;
+  line-height: 50rpx;
+  color: #fff;
+  background: #F86A5B;
+  border-radius: 25rpx;
+  text-align: center;
+}
+.homestay-details .homestay-details-mid .details-mid-house .scroll-view_H .homestay-list .homestay-list-in .homestay-list-in-pic .homestay-list-collect .collect-left .text.data-v-254174d4 {
+  display: inline-block;
+  margin-right: 10rpx;
+}
+.homestay-details .homestay-details-mid .details-mid-house .scroll-view_H .homestay-list .homestay-list-in .homestay-list-in-pic .homestay-list-collect .collect-right.data-v-254174d4 {
+  width: 54rpx;
+  height: 54rpx;
+}
+.homestay-details .homestay-details-mid .details-mid-house .scroll-view_H .homestay-list .homestay-list-in .homestay-list-in-pic .homestay-list-collect .collect-right image.data-v-254174d4 {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.homestay-details .homestay-details-mid .details-mid-house .scroll-view_H .homestay-list .homestay-list-in .homestay-list-p.data-v-254174d4 {
+  margin-top: 30rpx;
+  padding: 0 30rpx;
+}
+.homestay-details .homestay-details-mid .details-mid-house .scroll-view_H .homestay-list .homestay-list-in .homestay-list-p .homestay-list-title.data-v-254174d4 {
+  font-size: 34rpx;
+  color: #303030;
+  font-weight: bold;
+}
+.homestay-details .homestay-details-mid .details-mid-house .scroll-view_H .homestay-list .homestay-list-in .homestay-list-p .homestay-list-msg.data-v-254174d4 {
+  margin: 20rpx 0 30rpx 0;
+  font-size: 24rpx;
+  color: #666;
+}
+.homestay-details .homestay-details-mid .details-mid-house .scroll-view_H .homestay-list .homestay-list-in .homestay-list-p .homestay-list-msg .people.data-v-254174d4 {
+  display: inline-block;
+  margin: 0 20rpx;
+  padding: 0 20rpx;
+  border-right: 1rpx solid #E6E6E6;
+  border-left: 1rpx solid #E6E6E6;
+}
+.homestay-details .homestay-details-mid .details-mid-house .scroll-view_H .homestay-list .homestay-list-in .homestay-list-price.data-v-254174d4 {
+  margin: 0 20rpx;
+  padding: 0 20rpx;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
+  font-size: 28rpx;
+}
+.homestay-details .homestay-details-mid .details-mid-house .scroll-view_H .homestay-list .homestay-list-in .homestay-list-price .price.data-v-254174d4 {
+  display: inline-block;
+  color: #F44336;
+  margin-right: 20rpx;
+  font-size: 40rpx;
+}
+.homestay-details .homestay-details-mid .details-mid-house .scroll-view_H .homestay-list .homestay-list-in .homestay-list-price .price-gray.data-v-254174d4 {
+  font-weight: normal;
+  text-decoration: line-through;
+}
+.homestay-details .homestay-details-mid .details-mid-house .scroll-view_H .homestay-list .homestay-list-in .homestay-list-price .homestay-list-price-right.data-v-254174d4 {
+  margin-left: 47rpx;
+  font-size: 20rpx;
+  font-weight: normal;
+}
+.homestay-details .homestay-details-mid .details-mid-house .scroll-view_H .homestay-list .homestay-list-in .homestay-list-price .homestay-list-price-right .price-right-left.data-v-254174d4,
+.homestay-details .homestay-details-mid .details-mid-house .scroll-view_H .homestay-list .homestay-list-in .homestay-list-price .homestay-list-price-right .price-right-right.data-v-254174d4 {
+  display: inline-block;
+  padding: 6rpx 10rpx;
+  background-color: #FFEAEA;
+  color: #FF6666;
+  margin-right: 10rpx;
+}
+.homestay-details .homestay-details-mid .details-mid-house .scroll-view_H .homestay-list .homestay-list-in .homestay-list-price .homestay-list-price-right .price-right-right.data-v-254174d4 {
+  background-color: #FFF5E0;
+  color: #FF9645;
+}
+.homestay-details .homestay-details-fixed.data-v-254174d4 {
+  width: 100%;
+  border-top: 1rpx solid #EDEDED;
+  height: 96rpx;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  color: #666;
+  font-size: 22rpx;
+  background-color: #fff;
+}
+.homestay-details .homestay-details-fixed .homestay-details-fixed-left.data-v-254174d4 {
+  width: 100%;
+}
+.homestay-details .homestay-details-fixed .homestay-details-fixed-left .details-fixed-left-left .phone.data-v-254174d4,
+.homestay-details .homestay-details-fixed .homestay-details-fixed-left .details-fixed-left-left .news.data-v-254174d4 {
+  margin-top: 10rpx;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 60rpx;
+  margin-left: 32rpx;
+}
+.homestay-details .homestay-details-fixed .homestay-details-fixed-left .details-fixed-left-left .phone .tel.data-v-254174d4,
+.homestay-details .homestay-details-fixed .homestay-details-fixed-left .details-fixed-left-left .news .tel.data-v-254174d4 {
+  width: 40rpx;
+  height: 40rpx;
+  margin-bottom: 10rpx;
+}
+.homestay-details .homestay-details-fixed .homestay-details-fixed-left .details-fixed-left-left .news.data-v-254174d4 {
+  padding-right: 40rpx;
+  margin-left: 0;
+  margin-right: 0;
+}
+.homestay-details .homestay-details-fixed .homestay-details-fixed-left .price.data-v-254174d4 {
+  width: 100%;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  line-height: 96rpx;
+  margin: 0 auto;
+  text-align: center;
+  border-left: 1rpx solid #E2E2E2;
+}
+.homestay-details .homestay-details-fixed .homestay-details-fixed-left .price text.data-v-254174d4 {
+  display: inline-block;
+  font-size: 28rpx;
+  color: #FF575C;
+}
+.homestay-details .homestay-details-fixed .homestay-details-fixed-left .price text.data-v-254174d4:last-of-type {
+  font-size: 40rpx;
+}
+.homestay-details .homestay-details-fixed .homestay-details-fixed-right.data-v-254174d4 {
+  width: 240rpx;
+  line-height: 96rpx;
+  color: #fff;
+  background-color: #F44336;
+  font-size: 30rpx;
+  text-align: center;
+}
+

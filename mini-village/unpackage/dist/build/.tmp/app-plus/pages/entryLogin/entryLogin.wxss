@@ -1,0 +1,248 @@
+/* rest */
+
+.mcolor {
+	color: #f44336;
+}
+
+.background-cover {
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+
+.inline-block{
+	display: inline-block;
+}
+
+.block{
+	display: block;
+}
+
+page,
+._ul,
+._p,
+._h1,
+._h2,
+._h3,
+._h4,
+._h5 {
+	margin: 0;
+	padding: 0;
+}
+
+._li {
+	list-style: none;
+}
+
+._a,
+._a:visited {
+	text-decoration: none;
+	/* color: #195d92; */
+}
+
+/* 浮动 */
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.flexs {
+	display: -moz-box;
+	display: -webkit-box;
+	enter display: -webkit-flex;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+}
+
+.flex1 {
+	-ms-flex: 1;
+	-moz-flex: 1;
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	flex: 1;
+}
+
+.justify-between {
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	
+}
+
+.justify-center {
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	justify-items: center;
+}
+
+.justify-start {
+	-webkit-box-pack: start;
+	-webkit-justify-content: flex-start;
+	    -ms-flex-pack: start;
+	        justify-content: flex-start;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+
+.flex-direction{
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+}
+
+page {
+	font-family: "Helvetica Neue", Helvetica, Tahoma, Arial, "PingFang SC",
+		"Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei",
+		sans-serif;
+	/* font-size: 14upx; */
+	-webkit-text-size-adjust: 100%;
+	-webkit-tap-highlight-color: transparent;
+	line-height: 1.2;
+	color: #666;
+	-webkit-overflow-scrolling: touch;
+}
+
+.font-28{
+font-size:28rpx;
+font-family:PingFang-SC-Bold;
+font-weight:bold;
+color:#303030;
+}
+
+.font-24 {
+	font-size: 24rpx;
+	font-family: PingFang-SC-Medium;
+	font-weight: 500;
+}
+
+.font-26{
+font-size:26rpx;
+font-family:PingFang-SC-Medium;
+color:#303030;
+}
+
+._img {
+	height: auto;
+	width: 100%;
+}
+
+.red{
+	color: #F44336;
+}
+
+._select {
+	-webkit-appearance: none;
+}
+
+._select :focus {
+	outline: 0;
+	-webkit-tap-highlight-color: transparent;
+}
+
+/*移动端好看的字体*/
+
+/* body{
+        font-family:Tahoma,Arial,Roboto,"Droid Sans","Helvetica Neue","Droid Sans Fallback","Heiti SC",sans-self;
+    } */
+
+/*IOS下移除按钮原生样式 -webkit-appearance*/
+
+input[type="button"] {
+	-webkit-appearance: none;
+	outline: none;
+}
+
+/*去除点击按钮，有灰色阴影*/
+
+._a,
+button,
+input {
+	outline: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/*placeholder属性*/
+
+/*
+     ::-webkit-input-placeholder {
+        color: mediumvioletred;
+        text-indent: 5px;
+    } */
+
+@media only screen and (device-width: 3.75rem) and (device-height: 8.12rem) and (-webkit-device-pixel-ratio: 3) {
+	.iphonex {
+		padding-top: 0.44rem;
+		padding-bottom: 0.34rem;
+	}
+
+	.iphonex:before {
+		content: "";
+		display: block;
+		position: fixed;
+		width: 100%;
+		height: 0.44rem;
+		background-color: #000;
+		top: 0;
+		left: 0;
+		z-index: 9999;
+	}
+
+	.iphonex:after {
+		content: "";
+		display: block;
+		position: fixed;
+		width: 100%;
+		height: 0.34rem;
+		bottom: 0;
+		left: 0;
+		z-index: 9999;
+	}
+}
+
+.header.data-v-9a64d4fc {
+  margin: 90rpx 0 90rpx 50rpx;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+  width: 650rpx;
+  height: 300rpx;
+  line-height: 450rpx;
+}
+.header image.data-v-9a64d4fc {
+  width: 200rpx;
+  height: 200rpx;
+}
+.content.data-v-9a64d4fc {
+  margin-left: 50rpx;
+  margin-bottom: 90rpx;
+}
+.content text.data-v-9a64d4fc {
+  display: block;
+  color: #9d9d9d;
+  margin-top: 40rpx;
+}
+.bottom.data-v-9a64d4fc {
+  border-radius: 80rpx;
+  margin: 70rpx 50rpx;
+  font-size: 35rpx;
+}
+

@@ -1,0 +1,103 @@
+{
+  "pages": [
+    "pages/entryLogin/entryLogin",
+    "pages/evaluate/evaluate",
+    "pages/share/share",
+    "pages/chat/villagerList/villagerList",
+    "pages/chat/chatLine/chatLine",
+    "pages/index/index",
+    "pages/me/me/me",
+    "pages/chat/chatDialogue/chatDialogue",
+    "pages/chat/chatDialogue/chatDialogue_q",
+    "pages/chat/publishDynamic/publishDynamic",
+    "pages/addHometown/addHometown",
+    "pages/villageSet/applyVillager/applyVillager",
+    "pages/login/login",
+    "pages/details/details",
+    "pages/chat/chatList/chatList",
+    "pages/serch/serch",
+    "pages/serch/citySearch/citySearch",
+    "pages/meInfo/personInfo/personInfo",
+    "pages/order/orderList/orderList",
+    "pages/meInfo/villageNews/villageNews",
+    "pages/meInfo/myLike/myLike",
+    "pages/meInfo/myComment/myComment",
+    "pages/meInfo/newsList/newsList",
+    "pages/meInfo/fans/fans",
+    "pages/meInfo/attention/attention",
+    "pages/meInfo/nikeName/nikeName",
+    "pages/search-in/search-in",
+    "pages/ranking/ranking",
+    "pages/villageSet/villageLabel/villageLabel",
+    "pages/villageSet/villageVideo/villageVideo",
+    "pages/villageSet/villageManager/villageManager",
+    "pages/voteList/voteList",
+    "pages/contribution/contribution",
+    "pages/contributionDeatils/contributionDeatils",
+    "pages/uploadVideo/uploadVideo",
+    "pages/feature/feature",
+    "pages/addPic/addPic",
+    "pages/scenery/scenery",
+    "pages/uploadPic/uploadPic",
+    "pages/order/orderEvaluate/orderEvaluate",
+    "pages/publishEvaluate/publishEvaluate",
+    "pages/villageIntroduce/villageIntroduce",
+    "pages/villageSet/villagePic/villagePic",
+    "pages/villageSet/villageIntroduce/villageIntroduce",
+    "pages/modal/homestayDetails/homestayDetails",
+    "pages/modal/homestay/homestay",
+    "pages/chat/chatDeatils/chatDeatils",
+    "pages/h5/h5",
+    "pages/villageList/villageList",
+    "pages/details/villageDynamic",
+    "pages/homePage/myHomePage",
+    "pages/homePage/homePage"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#666",
+    "selectedColor": "#F44336",
+    "backgroundColor": "#FFF",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "static/img/tab_icon-1@2x.png",
+        "selectedIconPath": "static/img/tab_icon-05@2x.png"
+      },
+      {
+        "pagePath": "pages/chat/chatLine/chatLine",
+        "text": "动态",
+        "iconPath": "static/img/tab_icon-2@2x.png",
+        "selectedIconPath": "static/img/tab_icon-06@2x.png"
+      },
+      {
+        "pagePath": "pages/chat/chatList/chatList",
+        "text": "村聊",
+        "iconPath": "static/img/tab_icon-3@2x.png",
+        "selectedIconPath": "static/img/tab_icon-07@2x.png"
+      },
+      {
+        "pagePath": "pages/me/me/me",
+        "text": "我的",
+        "iconPath": "static/img/tab_icon-4@2x.png",
+        "selectedIconPath": "static/img/tab_icon-08@2x.png"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "为消费者推荐相邻乡村"
+    }
+  },
+  "usingComponents": {
+    "cu-custom": "/static/colorui/components/cu-custom"
+  },
+  "sitemapLocation": "sitemap52.json"
+}

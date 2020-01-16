@@ -1,0 +1,100 @@
+.select-page.data-v-b044d3b6 {
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  height: 100%;
+}
+.select-page .scroll-list-panel.data-v-b044d3b6 {
+  height: inherit;
+}
+.select-page .scroll-list-panel .title.data-v-b044d3b6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  box-sizing: border-box;
+}
+.select-page .scroll-list-panel .list.data-v-b044d3b6 {
+  box-sizing: border-box;
+}
+.select-page .scroll-list-panel .list text.data-v-b044d3b6 {
+  display: block;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  box-sizing: border-box;
+}
+.select-page .scroll-list-panel .list text.data-v-b044d3b6:last-child {
+  border: none;
+}
+.select-page .now-sort.data-v-b044d3b6 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  box-sizing: border-box;
+}
+.select-page .now-letter.data-v-b044d3b6 {
+  font-size: 160rpx;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+          transform: translate3d(-50%, -50%, 0);
+  opacity: 0;
+}
+.select-page .now-letter.fadeIn.data-v-b044d3b6 {
+  -webkit-animation: fade-data-v-b044d3b6 1s linear 0ms;
+          animation: fade-data-v-b044d3b6 1s linear 0ms;
+}
+.select-page .letter-nav.data-v-b044d3b6 {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  z-index: 99999;
+}
+@-webkit-keyframes fade-data-v-b044d3b6 {
+0% {
+    opacity: 0;
+    display: block !important;
+}
+50% {
+    opacity: 0.4;
+}
+100% {
+    display: none;
+    opacity: 0 !important;
+}
+}
+@keyframes fade-data-v-b044d3b6 {
+0% {
+    opacity: 0;
+    display: block !important;
+}
+50% {
+    opacity: 0.4;
+}
+100% {
+    display: none;
+    opacity: 0 !important;
+}
+}
+

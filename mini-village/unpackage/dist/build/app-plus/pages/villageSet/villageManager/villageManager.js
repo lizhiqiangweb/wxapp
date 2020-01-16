@@ -1,0 +1,2 @@
+setCssToHead(["body { background-color: #F5F5F5; }\n",],undefined,{path:"./pages/villageSet/villageManager/villageManager.wxss"})();
+document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/villageSet/villageManager/villageManager.wxml') } }));

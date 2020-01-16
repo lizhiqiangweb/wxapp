@@ -1,0 +1,2 @@
+setCssToHead([".",[1],"uni-padding-wrap.",[1],"data-v-93640abe { padding: ",[0,30]," ",[0,30],"; }\n.",[1],"uni-padding-wrap .",[1],"uni-textarea.",[1],"data-v-93640abe { padding-top: ",[0,30],"; }\n",],undefined,{path:"./pages/share/share.wxss"})();
+document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/share/share.wxml') } }));

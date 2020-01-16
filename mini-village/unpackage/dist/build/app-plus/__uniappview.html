@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+    <head>
+        <meta charset="UTF-8" />
+        <script>
+            var coverSupport = 'CSS' in window && typeof CSS.supports === 'function' && (CSS.supports('top: env(a)') ||
+                CSS.supports('top: constant(a)'))
+            document.write(
+                '<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' +
+                (coverSupport ? ', viewport-fit=cover' : '') + '" />')
+        </script>
+        <title>View</title>
+        <style>
+            * {
+                -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+                -webkit-tap-highlight-color: transparent;
+            }
+
+            input[type="search"i]::-webkit-search-cancel-button {
+                display: none;
+            }
+        </style>
+        <script>
+            var __wxConfig = {"debug":false,"appname":"令行禁止","entryPagePath":"pages/entryLogin/entryLogin.html","page":{"pages/entryLogin/entryLogin.html":{"window":{"navigationBarTitleText":"授权登陆","usingComponents":{}}},"pages/evaluate/evaluate.html":{"window":{"navigationBarTitleText":"评价","usingComponents":{}}},"pages/share/share.html":{"window":{"navigationBarTitleText":"分享","usingComponents":{}}},"pages/chat/villagerList/villagerList.html":{"window":{"navigationBarTitleText":"村民列表","usingComponents":{}}},"pages/chat/chatLine/chatLine.html":{"window":{"navigationBarTitleText":"动态","usingComponents":{"mescroll-uni":"/components/mescroll-uni/mescroll-uni"}}},"pages/index/index.html":{"window":{"navigationBarTitleText":"首页","usingComponents":{"mescroll-uni":"/components/mescroll-uni/mescroll-uni"}}},"pages/me/me/me.html":{"window":{"navigationBarTitleText":"我的","usingComponents":{}}},"pages/chat/chatDialogue/chatDialogue.html":{"window":{"navigationBarTitleText":"聊天","usingComponents":{}}},"pages/chat/publishDynamic/publishDynamic.html":{"window":{"navigationBarTitleText":"发表动态","usingComponents":{}}},"pages/addHometown/addHometown.html":{"window":{"navigationBarTitleText":"添加我的家乡","usingComponents":{"link-address":"/components/xuan-linkAddress/xuan-linkAddress"}}},"pages/villageSet/applyVillager/applyVillager.html":{"window":{"navigationBarTitleText":"申请村管理","usingComponents":{"link-address":"/components/xuan-linkAddress/xuan-linkAddress"}}},"pages/login/login.html":{"window":{"navigationBarTitleText":"账户登陆","usingComponents":{}}},"pages/details/details.html":{"window":{"navigationBarTitleText":"详情","usingComponents":{}}},"pages/chat/chatList/chatList.html":{"window":{"navigationBarTitleText":"村聊","usingComponents":{}}},"pages/serch/serch.html":{"window":{"navigationBarTitleText":"搜索","usingComponents":{}}},"pages/serch/citySearch/citySearch.html":{"window":{"navigationBarTitleText":"精确查找","usingComponents":{"uni-select":"/components/lee-select/lee-select"}}},"pages/meInfo/personInfo/personInfo.html":{"window":{"navigationBarTitleText":"编辑资料","usingComponents":{}}},"pages/order/orderList/orderList.html":{"window":{"navigationBarTitleText":"我的订单","usingComponents":{}}},"pages/meInfo/villageNews/villageNews.html":{"window":{"navigationBarTitleText":"村消息","usingComponents":{}}},"pages/meInfo/myLike/myLike.html":{"window":{"navigationBarTitleText":"点赞我的","usingComponents":{}}},"pages/meInfo/myComment/myComment.html":{"window":{"navigationBarTitleText":"评论我的","usingComponents":{}}},"pages/meInfo/newsList/newsList.html":{"window":{"navigationBarTitleText":"消息列表","usingComponents":{}}},"pages/meInfo/fans/fans.html":{"window":{"navigationBarTitleText":"粉丝","usingComponents":{}}},"pages/meInfo/attention/attention.html":{"window":{"navigationBarTitleText":"关注","usingComponents":{}}},"pages/meInfo/nikeName/nikeName.html":{"window":{"navigationBarTitleText":"修改昵称","usingComponents":{}}},"pages/search-in/search-in.html":{"window":{"navigationBarTitleText":"搜索","usingComponents":{}}},"pages/ranking/ranking.html":{"window":{"navigationBarTitleText":"村排名","navigationBarBackgroundColor":"#3c9ffc","backgroundColorTop":"#3c9ffc","navigationBarTextStyle":"white","titleNView":{"type":"transparent","titleColor":"#fff","backgroundColor":"#3c9ffc"},"usingComponents":{}}},"pages/villageSet/villageLabel/villageLabel.html":{"window":{"navigationBarTitleText":"乡村标签","usingComponents":{}}},"pages/villageSet/villageVideo/villageVideo.html":{"window":{"navigationBarTitleText":"村头视频","usingComponents":{}}},"pages/villageSet/villageManager/villageManager.html":{"window":{"navigationBarTitleText":"村务管理","usingComponents":{}}},"pages/voteList/voteList.html":{"window":{"navigationBarTitleText":"为家乡打榜","usingComponents":{}}},"pages/contribution/contribution.html":{"window":{"navigationBarTitleText":"赚贡献值","usingComponents":{}}},"pages/contributionDeatils/contributionDeatils.html":{"window":{"navigationBarTitleText":"贡献值明细","usingComponents":{}}},"pages/uploadVideo/uploadVideo.html":{"window":{"navigationBarTitleText":"添加视频","usingComponents":{}}},"pages/feature/feature.html":{"window":{"navigationBarTitleText":"特色风采","usingComponents":{}}},"pages/addPic/addPic.html":{"window":{"navigationBarTitleText":"添加图片","usingComponents":{}}},"pages/scenery/scenery.html":{"window":{"navigationBarTitleText":"村景","usingComponents":{}}},"pages/uploadPic/uploadPic.html":{"window":{"navigationBarTitleText":"上传村景","usingComponents":{}}},"pages/order/orderEvaluate/orderEvaluate.html":{"window":{"navigationBarTitleText":"点评","usingComponents":{}}},"pages/publishEvaluate/publishEvaluate.html":{"window":{"navigationBarTitleText":"发表点评","usingComponents":{}}},"pages/villageIntroduce/villageIntroduce.html":{"window":{"navigationBarTitleText":"村简介发表","usingComponents":{}}},"pages/villageSet/villagePic/villagePic.html":{"window":{"navigationBarTitleText":"家乡封面","usingComponents":{}}},"pages/villageSet/villageIntroduce/villageIntroduce.html":{"window":{"navigationBarTitleText":"编辑乡村简介","usingComponents":{}}},"pages/modal/homestayDetails/homestayDetails.html":{"window":{"navigationBarTitleText":"民宿","usingComponents":{}}},"pages/modal/homestay/homestay.html":{"window":{"navigationBarTitleText":"民宿","usingComponents":{}}},"pages/chat/chatDeatils/chatDeatils.html":{"window":{"usingComponents":{}}},"pages/h5/h5.html":{"window":{"navigationBarTitleText":"网页浏览","usingComponents":{}}}},"global":{"window":{"navigationBarTextStyle":"black","navigationBarTitleText":"uni-app","navigationBarBackgroundColor":"#F8F8F8","backgroundColor":"#F8F8F8"}},"tabBar":{"color":"#666","selectedColor":"#F44336","backgroundColor":"#FFF","borderStyle":"black","list":[{"pagePath":"pages/index/index.html","text":"首页","iconPath":"static/img/tab_icon-1@2x.png","selectedIconPath":"static/img/tab_icon-05@2x.png"},{"pagePath":"pages/chat/chatLine/chatLine.html","text":"动态","iconPath":"static/img/tab_icon-2@2x.png","selectedIconPath":"static/img/tab_icon-06@2x.png"},{"pagePath":"pages/chat/chatList/chatList.html","text":"村聊","iconPath":"static/img/tab_icon-3@2x.png","selectedIconPath":"static/img/tab_icon-07@2x.png"},{"pagePath":"pages/me/me/me.html","text":"我的","iconPath":"static/img/tab_icon-4@2x.png","selectedIconPath":"static/img/tab_icon-08@2x.png"}],"position":"bottom"},"networkTimeout":{"request":60000,"connectSocket":60000,"uploadFile":60000,"downloadFile":60000},"platform":"devtools","pages":["pages/entryLogin/entryLogin","pages/evaluate/evaluate","pages/share/share","pages/chat/villagerList/villagerList","pages/chat/chatLine/chatLine","pages/index/index","pages/me/me/me","pages/chat/chatDialogue/chatDialogue","pages/chat/publishDynamic/publishDynamic","pages/addHometown/addHometown","pages/villageSet/applyVillager/applyVillager","pages/login/login","pages/details/details","pages/chat/chatList/chatList","pages/serch/serch","pages/serch/citySearch/citySearch","pages/meInfo/personInfo/personInfo","pages/order/orderList/orderList","pages/meInfo/villageNews/villageNews","pages/meInfo/myLike/myLike","pages/meInfo/myComment/myComment","pages/meInfo/newsList/newsList","pages/meInfo/fans/fans","pages/meInfo/attention/attention","pages/meInfo/nikeName/nikeName","pages/search-in/search-in","pages/ranking/ranking","pages/villageSet/villageLabel/villageLabel","pages/villageSet/villageVideo/villageVideo","pages/villageSet/villageManager/villageManager","pages/voteList/voteList","pages/contribution/contribution","pages/contributionDeatils/contributionDeatils","pages/uploadVideo/uploadVideo","pages/feature/feature","pages/addPic/addPic","pages/scenery/scenery","pages/uploadPic/uploadPic","pages/order/orderEvaluate/orderEvaluate","pages/publishEvaluate/publishEvaluate","pages/villageIntroduce/villageIntroduce","pages/villageSet/villagePic/villagePic","pages/villageSet/villageIntroduce/villageIntroduce","pages/modal/homestayDetails/homestayDetails","pages/modal/homestay/homestay","pages/chat/chatDeatils/chatDeatils","pages/h5/h5"],"nvueCompiler":"weex","renderer":"auto","splashscreen":{"alwaysShowBeforeRender":true,"autoclose":false},"compilerVersion":"2.3.3","usingComponents":{"md5":"/js_sdk/js-md5/build/md5.min","j-i-m":"/js_sdk/wxmp-jiguang/jmessage-wxapplet-sdk-1.4.0/jmessage-wxapplet-sdk-1.4.0.min","cu-custom":"/static/colorui/components/cu-custom"}}
+        </script>
+        <script>
+            var __id__ = '';
+            window.__dispatchGenerateFunc__ = function(page) {
+                __id__ = page;
+                document.title = page;
+                // window.history.pushState('', '', page);
+                var wxss = page.replace('.html', '.wxss')
+                if (
+                    typeof __wxAppCode__ !== 'undefined' &&
+                    __wxAppCode__.hasOwnProperty(wxss)
+                ) {
+                    var setCssToHead = __wxAppCode__[wxss]
+                    typeof setCssToHead === 'function' && setCssToHead()
+                    document.dispatchEvent(new CustomEvent("generateFuncReady", {
+                        detail: {
+                            generateFunc: $gwx(page.replace('.html', '.wxml'))
+                        }
+                    }));
+                } else {
+                    plus.webview.currentWebview().setJsFile('_www/' + page.replace('.html', '.js'));
+                }
+            };
+        </script>
+        <script src="__uniappes6.js"></script>
+        <script src="uniapp://ready"></script>
+    </head>
+
+    <body>
+        <div></div>
+    </body>
+
+</html>

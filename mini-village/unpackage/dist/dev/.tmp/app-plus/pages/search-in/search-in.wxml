@@ -1,0 +1,1 @@
+<view class="search-in data-v-83e2438a"><view class="search-in-pic background-cover data-v-83e2438a" style="{{'background-image:'+('url('+no_house+')')+';'}}"></view><view data-event-opts="{{[['tap',[['addSumbit',['$event']]]]]}}" class="padding flex flex-direction data-v-83e2438a" bindtap="__e"><button class="cu-btn margin-tb-sm lg data-v-83e2438a">添加我的家乡</button></view></view>

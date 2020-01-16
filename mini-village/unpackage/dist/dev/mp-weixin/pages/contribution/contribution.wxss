@@ -1,0 +1,296 @@
+/* rest */
+
+.mcolor {
+	color: #f44336;
+}
+
+.background-cover {
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+
+.inline-block{
+	display: inline-block;
+}
+
+.block{
+	display: block;
+}
+
+page,
+._ul,
+._p,
+._h1,
+._h2,
+._h3,
+._h4,
+._h5 {
+	margin: 0;
+	padding: 0;
+}
+
+._li {
+	list-style: none;
+}
+
+._a,
+._a:visited {
+	text-decoration: none;
+	/* color: #195d92; */
+}
+
+/* 浮动 */
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.flexs {
+	display: -moz-box;
+	display: -webkit-box;
+	enter display: -webkit-flex;
+	display: -webkit-flex;
+	display: flex;
+}
+
+.flex1 {
+	-moz-flex: 1;
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	flex: 1;
+}
+
+.justify-between {
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	
+}
+
+.justify-center {
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	justify-items: center;
+}
+
+.justify-start {
+	-webkit-box-pack: start;
+	-webkit-justify-content: flex-start;
+	        justify-content: flex-start;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+}
+
+.flex-direction{
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	        flex-direction: column;
+}
+
+page {
+	font-family: "Helvetica Neue", Helvetica, Tahoma, Arial, "PingFang SC",
+		"Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei",
+		sans-serif;
+	/* font-size: 14upx; */
+	-webkit-text-size-adjust: 100%;
+	-webkit-tap-highlight-color: transparent;
+	line-height: 1.2;
+	color: #666;
+	-webkit-overflow-scrolling: touch;
+}
+
+.font-28{
+font-size:28rpx;
+font-family:PingFang-SC-Bold;
+font-weight:bold;
+color:#303030;
+}
+
+.font-24 {
+	font-size: 24rpx;
+	font-family: PingFang-SC-Medium;
+	font-weight: 500;
+}
+
+.font-26{
+font-size:26rpx;
+font-family:PingFang-SC-Medium;
+color:#303030;
+}
+
+._img {
+	height: auto;
+	width: 100%;
+}
+
+.red{
+	color: #F44336;
+}
+
+._select {
+	-webkit-appearance: none;
+}
+
+._select :focus {
+	outline: 0;
+	-webkit-tap-highlight-color: transparent;
+}
+
+/*移动端好看的字体*/
+
+/* body{
+        font-family:Tahoma,Arial,Roboto,"Droid Sans","Helvetica Neue","Droid Sans Fallback","Heiti SC",sans-self;
+    } */
+
+/*IOS下移除按钮原生样式 -webkit-appearance*/
+
+input[type="button"] {
+	-webkit-appearance: none;
+	outline: none;
+}
+
+/*去除点击按钮，有灰色阴影*/
+
+._a,
+button,
+input {
+	outline: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/*placeholder属性*/
+
+/*
+     ::-webkit-input-placeholder {
+        color: mediumvioletred;
+        text-indent: 5px;
+    } */
+
+@media only screen and (device-width: 3.75rem) and (device-height: 8.12rem) and (-webkit-device-pixel-ratio: 3) {
+	.iphonex {
+		padding-top: 0.44rem;
+		padding-bottom: 0.34rem;
+	}
+
+	.iphonex:before {
+		content: "";
+		display: block;
+		position: fixed;
+		width: 100%;
+		height: 0.44rem;
+		background-color: #000;
+		top: 0;
+		left: 0;
+		z-index: 9999;
+	}
+
+	.iphonex:after {
+		content: "";
+		display: block;
+		position: fixed;
+		width: 100%;
+		height: 0.34rem;
+		bottom: 0;
+		left: 0;
+		z-index: 9999;
+	}
+}
+
+.contribution.data-v-37e14f65 {
+  font-size: 30rpx;
+  font-weight: bold;
+  color: #303030;
+}
+.contribution .contribution-banner.data-v-37e14f65 {
+  height: 200rpx;
+  padding-top: 50rpx;
+  color: #fff;
+  position: relative;
+}
+.contribution .contribution-banner .contribution-banner-in.data-v-37e14f65 {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 26rpx;
+}
+.contribution .contribution-banner .contribution-banner-in .p.data-v-37e14f65 {
+  display: block;
+  margin-bottom: 20rpx;
+  font-size: 60rpx;
+}
+.contribution .contribution-banner .contribution-banner-in .msg.data-v-37e14f65 {
+  font-weight: normal;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+}
+.contribution .contribution-banner .contribution-banner-in .msg .question.data-v-37e14f65 {
+  display: inline-block;
+  width: 30rpx;
+  height: 30rpx;
+  margin-left: 10rpx;
+}
+.contribution .contribution-banner .detail.data-v-37e14f65 {
+  width: 180rpx;
+  line-height: 50rpx;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 25rpx 0rpx 0rpx 25rpx;
+  position: absolute;
+  right: 0;
+  top: 50rpx;
+  font-weight: normal;
+}
+.contribution .invite.data-v-37e14f65 {
+  padding: 0 30rpx;
+  margin-top: 80rpx;
+}
+.contribution .invite .invite-title.data-v-37e14f65 {
+  padding-bottom: 37rpx;
+  border-bottom: 1rpx solid #EDEDED;
+  font-size: 28rpx;
+}
+.contribution .invite .invite-title .invite-title-in.data-v-37e14f65 {
+  width: 6rpx;
+  height: 28rpx;
+  margin-right: 17rpx;
+  background: -webkit-linear-gradient(bottom, #fa715f 0%, #f44b4b 100%);
+  background: linear-gradient(0deg, #fa715f 0%, #f44b4b 100%);
+}
+.contribution .invite .invite-list.data-v-37e14f65 {
+  margin: 40rpx 0;
+}
+.contribution .invite .invite-list .invite-list-left text.data-v-37e14f65 {
+  display: block;
+}
+.contribution .invite .invite-list .invite-list-left text.data-v-37e14f65:last-of-type {
+  color: #ABABAB;
+  font-size: 28rpx;
+  margin-top: 23rpx;
+}
+.contribution .invite .invite-list .invite-list-right.data-v-37e14f65 {
+  width: 160rpx;
+  line-height: 60rpx;
+  background: #F6695E;
+  color: #fff;
+  border-radius: 30rpx;
+  text-align: center;
+}
+

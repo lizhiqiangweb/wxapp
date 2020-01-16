@@ -1,0 +1,2 @@
+setCssToHead(["body { background-color: #F5F5F5; }\n.",[1],"village-introduce .",[1],"cu-form-group wx-textarea.",[1],"data-v-6612f124 { padding-top: ",[0,30],"; margin: 0; height: ",[0,330],"; }\n.",[1],"village-introduce .",[1],"submit.",[1],"data-v-6612f124 { margin-top: ",[0,120],"; }\n",],undefined,{path:"./pages/villageSet/villageIntroduce/villageIntroduce.wxss"})();
+document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/villageSet/villageIntroduce/villageIntroduce.wxml') } }));
