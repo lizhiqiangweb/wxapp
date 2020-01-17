@@ -388,19 +388,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
-
-
-
-
-
 __webpack_require__(/*! ../../static/common.css */ 30); //
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -675,7 +663,13 @@ var _default = { data: function data() {return { background: ['color1', 'color2'
         uni.navigateTo({ url: '../scenery/scenery?villageId=' + this.villageId + '&isVillager=' + this.detailsInfo.village_view.is_villager });} else if (id == 66) {uni.navigateTo({ url: '../feature/feature?villageId=' + this.villageId + '&isVillager=' + this.detailsInfo.village_view.is_villager });} else if (id == 67) {uni.navigateTo({ url: '../chat/chatDialogue/chatDialogue_q' });} else if (id == 68) {uni.navigateTo({ url: '../share/share?url=index/index' });} else if (id == 69) {uni.navigateTo({ url: '../modal/homestay/homestay' });} else if (id == 70) {uni.showToast({ title: '完善中，耐心等待', icon: 'none' });} else if (id == 77) {uni.showToast({ title: '完善中，耐心等待', icon: 'none' });} else {uni.showToast({ title: '完善中，耐心等待', icon: 'none' });}}, listClick: function listClick(id) {if (id == '1') {// 村景
         uni.navigateTo({ url: '../scenery/scenery?villageId=' + this.villageId + '&isVillager=' + this.detailsInfo.village_view.is_villager });this.hideModal();} else if (id == '2') {uni.navigateTo({ url: '../feature/feature?villageId=' + this.villageId + '&isVillager=' + this.detailsInfo.village_view.is_villager });this.hideModal();} else if (id == '3') {uni.navigateTo({ url: '../modal/homestay/homestay?villageId=' + this.villageId + '&isVillager=' + this.detailsInfo.village_view.is_villager });this.hideModal();} else if (id == '4') {uni.showToast({ title: '完善中，耐心等待', icon: 'none' });} else if (id == '5') {uni.navigateTo({ url: '../chat/publishDynamic/publishDynamic' });this.hideModal();} else if (id == '6') {uni.showToast({ title: '完善中，耐心等待', icon: 'none' });} else {uni.showToast({ title: '完善中，耐心等待', icon: 'none' });}}, //村管理设置首页图，如不是村管理，则不能设置
     setClick: function setClick() {if (detailsInfo.village_view.is_villager == '') {uni.showToast({ title: '您还不是村管理哦', icon: 'none' });} else {// 界面待定
-        uni.navigateTo({ url: '../villageManager/villageManager' });}}, manageClick: function manageClick() {uni.navigateTo({ url: '../villageSet/villageManager/villageManager?villageId=' + this.detailsInfo.village_view.village_id });}, locationClick: function locationClick() {var latitude = parseFloat(this.detailsInfo.village_view.latitude);var longitude = parseFloat(this.detailsInfo.village_view.longitude);uni.openLocation({ latitude: latitude, longitude: longitude, success: function success() {} });
+        uni.navigateTo({ url: '../villageManager/villageManager' });}}, manageClick: function manageClick() {uni.navigateTo({ url: '../villageSet/villageManager/villageManager?villageId=' + this.detailsInfo.village_view.village_id });}, locationClick: function locationClick() {
+      var latitude = parseFloat(this.detailsInfo.village_view.latitude);
+      var longitude = parseFloat(this.detailsInfo.village_view.longitude);
+      uni.openLocation({
+        latitude: latitude,
+        longitude: longitude,
+        success: function success() {} });
 
     },
     reviseClick: function reviseClick() {

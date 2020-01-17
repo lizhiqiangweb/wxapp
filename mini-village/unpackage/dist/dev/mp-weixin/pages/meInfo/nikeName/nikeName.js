@@ -180,8 +180,7 @@ var _default = { data: function data() {return { user: {}, wordChange: '', nikeN
     this.$api.Key = this.userInfo.key;
     this.nikeName = option.name;
     this.wordChange = this.nikeName;
-    console.log(this.nikeName);
-
+    // console.log(this.nikeName);
   } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 

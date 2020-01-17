@@ -158,12 +158,6 @@
 						</view>
 						<view class="scroll-view-item_title" style="color: #303030;">{{item.house_title}}</view>
 						<view class="location">{{item.location}}</view>
-						<!-- 	<view class="scroll-view-item_btm" :class="item.is_vote=='1'?'isgray':''" @tap.stop="vote(item.village_id)">
-							{{item.is_vote=='0'?'投票':'已投'}}
-						</view> -->
-						<!-- <view class="index-second-tips">
-							{{item.from_city_name}}
-						</view> -->
 						<view class="index-second-current">
 							{{index+1}}/{{detailsInfo.house_list.length}}
 						</view>

@@ -402,6 +402,7 @@ var _default = { data: function data() {return { no_homestay: "".concat(this.$en
         Client: that.$api.CLIENT,
         Version: that.$api.VERSION }).
       then(function (res) {
+        // console.log(res.data.data)
         if (res.data.flag === 200) {
           that.top[0].num = res.data.data.my_dynamic_count;
           that.top[1].num = res.data.data.attention_num;

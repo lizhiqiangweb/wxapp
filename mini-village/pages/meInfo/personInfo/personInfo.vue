@@ -171,17 +171,16 @@
 							title: res.data.msg,
 							icon: 'none'
 						});
-						uni.navigateBack()
+						uni.navigateBack();
 					}
 				});
 			},
 		},
 		onLoad(option) {
 			this.userInfo=uni.getStorageSync('userInfo');
-			this.$api.Key=this.userInfo.key
+			this.$api.Key=this.userInfo.key;
 			this.nikeName = option.name;
-			this.head = option.head
-
+			this.head = option.head;
 		}
 	}
 </script>

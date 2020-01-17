@@ -175,9 +175,7 @@
 			// this.getHositoryNews();
 			this.avatarUrl();
  		},
-		updated() {
-			this.scrollToBottom()
-		},
+
 		onLoad(options) {
 			this.news = options;
 			// 重置回话未读
@@ -189,6 +187,7 @@
 			    title: this.news.nickName
 			});
 			this.getUserInfo();
+			this.scrollToBottom();
 		},
 		onShow() {
 			this.onMsgReceive();

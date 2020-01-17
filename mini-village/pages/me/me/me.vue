@@ -274,8 +274,9 @@
 				that.$request.httpTokenRequest(that.$api.getFansNum, that.$api.get, {
 					Key: that.$api.Key,
 					Client: that.$api.CLIENT,
-					Version: that.$api.VERSION,
+					Version: that.$api.VERSION, 
 				}).then((res) => {
+					// console.log(res.data.data)
 					if (res.data.flag === 200) {
 						that.top[0].num = res.data.data.my_dynamic_count
 						that.top[1].num = res.data.data.attention_num

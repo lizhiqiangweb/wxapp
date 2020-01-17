@@ -27,10 +27,10 @@
 				this.user.real_name = e.detail.value;
 			},
 			canelClick() {
-				this.wordChange = ""
+				this.wordChange = "";
 			},
 			nameClick() {
-				let that = this
+				let that = this;
 				that.$request.phpTokenRequest(that.$api.editMember, that.$api.get, {
 					Key: that.$api.Key,
 					Client: that.$api.CLIENT,
@@ -51,11 +51,10 @@
 		},
 		onLoad(option) {
 			this.userInfo=uni.getStorageSync('userInfo');
-			this.$api.Key=this.userInfo.key
+			this.$api.Key=this.userInfo.key;
 			this.nikeName = option.name;
-			this.wordChange=this.nikeName
-			console.log(this.nikeName)
-			
+			this.wordChange=this.nikeName;
+			// console.log(this.nikeName);
 		}
 	}
 </script>

@@ -316,9 +316,7 @@ var _default = { data: function data() {return { InputBottom: 0, chatData: [], n
     // this.getHositoryNews();
     this.avatarUrl();
   },
-  updated: function updated() {
-    this.scrollToBottom();
-  },
+
   onLoad: function onLoad(options) {
     this.news = options;
     // 重置回话未读
@@ -330,6 +328,7 @@ var _default = { data: function data() {return { InputBottom: 0, chatData: [], n
       title: this.news.nickName });
 
     this.getUserInfo();
+    this.scrollToBottom();
   },
   onShow: function onShow() {
     this.onMsgReceive();

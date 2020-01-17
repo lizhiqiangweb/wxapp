@@ -307,7 +307,6 @@ var _default = { data: function data() {return { picList: [{ 'name': '拍照', '
     this.$api.Key = this.userInfo.key;
     this.nikeName = option.name;
     this.head = option.head;
-
   } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
