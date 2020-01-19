@@ -199,3 +199,13 @@ input {
 		z-index: 9999;
 	}
 }
+.no-data {
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+}
+.no-data image {
+	width: 436upx;
+	height: 346upx;
+	margin: 120upx auto 0;
+}

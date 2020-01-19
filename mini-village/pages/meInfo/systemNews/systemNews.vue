@@ -1,25 +1,26 @@
 <template>
 	<view class="chat-list">
-
-
-		<view class="chat-top flexs weixin-add" v-for="(item,index) in listInfo" :key="index">
-			<view class="evaluate-msg-head-left flexs">
-				<text class="head-pic background-cover" :style="{backgroundImage:'url(' + item.member_head+ ')'}"></text>
-				<view class="head-info">
-					<view class="head-info-name">
-						<text class="head-info-nike">{{item.member_nick_name}}</text>
-						<text class="head-info-manage">{{item. village_name}}</text>
+		<view style="width: 100%;margin-top: 30px;"  v-for="(item,index) in systemList" :key="index">
+			<view class="chat-top flexs">
+				<view class="evaluate-msg-head-left flexs">
+					<!-- <text class="head-pic background-cover"></text> -->
+					<view class="head-info">
+						<view class="head-info-name">
+							<text class="head-info-nike"><text class="circle" v-show="item.message_is_read"></text>{{item.message_title}}</text>
+							<text class="head-info-nike-in"></text>
+						</view>
+						<text class="head-info-time">{{item.message_content}}</text>
 					</view>
 				</view>
-			</view>
-			<view class="chat-right background-cover" :style="{backgroundImage:'url(' + chat_p+ ')'}">
+				<view class="chat-right">
+					{{item.date_desc}}
+				</view>
 			</view>
 		</view>
 		<!-- no-data -->
-		<view class="no-data" v-if="listInfo.length == 0">
+		<view class="no-data" v-if="systemList.length == 0">
 			<image src="../../../static/img/no_data.png" mode=""></image>
 		</view>
-
 	</view>
 </template>
 
@@ -31,49 +32,36 @@
 
 		data() {
 			return {
-				TabCur: 0,
-				scrollLeft: 0,
-				value: '0',
-				relateBg: `${this.$env.img1}ranking.png`,
-				publish: `${this.$env.img1}publish@2x.png`,
-				share: `${this.$env.img1}relay@2x.png`,
-				msg: `${this.$env.img1}comment@2x.png`,
-				click: `${this.$env.img1}help@2x.png`,
-				add: `${this.$env.img1}weixin_add@2x.png`,
-				weixin_icon: `${this.$env.img1}weixin_icon@2x.png`,
-				chat_p: `${this.$env.img1}chat_p@2x.png`,
 				PageIndex: 1,
 				PageSize: 10,
-				listInfo: []
-
-
+				systemList:[]
 			};
 		},
 		methods: {
-			listInit() {
+			newsInit() {
 				let that = this
-				that.$request.httpTokenRequest(that.$api.getFriendList, that.$api.get, {
+				that.$request.httpTokenRequest(that.$api.getSpMessageByType, that.$api.get, {
 					Key: that.$api.Key,
 					Client: that.$api.CLIENT,
 					Version: that.$api.VERSION,
+					type: 3,
 					PageIndex: that.PageIndex,
-					PageSize: that.PageSize,
-					friendType: 2
-
+					PageSize: that.PageSize
 				}).then((res) => {
-					
+					console.log(res)
 					if (res.data.flag === 200) {
-						that.listInfo = res.data.data.data_list
+						that.systemList=res.data.data.data.data_list
+						console.log(that.systemList)
 					}
 				});
 
 
-			}
+			},
 		},
 		onLoad() {
 			this.userInfo=uni.getStorageSync('userInfo');
 			this.$api.Key=this.userInfo.key
-			this.listInit()
+			this.newsInit()
 		}
 	}
 </script>
@@ -84,8 +72,9 @@
 </style>
 <style lang="less" scoped>
 	.chat-list {
-		padding-top: 20upx;
+		// padding: 30upx;
 		position: relative;
+		padding-top: 20upx;
 
 		.chat-top {
 			margin: 0 30upx;
@@ -115,8 +104,16 @@
 						color: #303030;
 						font-size: 32upx;
 						font-weight: 700;
-						margin-right: 10upx;
 						position: relative;
+
+						.circle {
+							display: inline-block;
+							margin-right: 10upx;
+							width: 20upx;
+							height: 20upx;
+							background: #F96C6C;
+							border-radius: 50%;
+						}
 
 						.news {
 							padding: 7upx 10upx;

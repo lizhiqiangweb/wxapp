@@ -6,7 +6,7 @@
 					<text class="head-pic background-cover" :style="{backgroundImage:'url(' + item.img+ ')'}"></text>
 					<view class="head-info">
 						<view class="head-info-name">
-							<text class="head-info-nike">{{item.title}} <text class="news" v-show="item.id==1&&item.num!==0||item.id==2&&item.num!==0||item.id==3&&item.num!==0||item.id==4&&item.num!==0">{{item.num}}</text></text>
+							<text class="head-info-nike">{{item.title}} <text class="news" v-if="item.num !== 0">{{item.num}}</text></text>
 						</view>
 						<text class="head-info-time">{{item.content}}</text>
 					</view>
@@ -80,6 +80,7 @@
 					Client: that.$api.CLIENT,
 					Version: that.$api.VERSION,
 				}).then((res) => {
+					console.log(res)
 					if (res.data.flag === 200) {
 						that.newsInfo=res.data.data
 						that.newsList[0].num=that.newsInfo.comment_count
@@ -102,9 +103,6 @@
 						that.newsList[4].content=that.newsInfo.neares_system_count_message_info.content
 						that.newsList[4].time=that.newsInfo.neares_system_count_message_info.date_desc
 						
-						
-
-						
 					}
 				});
 
@@ -126,6 +124,10 @@
 				}else if(id==4){
 					uni.navigateTo({
 						url: '../villageNews/villageNews' 
+					})
+				}else if(id==5){
+					uni.navigateTo({
+						url: '../systemNews/systemNews' 
 					})
 				}
 				
@@ -183,7 +185,7 @@
 							color: #fff;
 							position: absolute;
 							top: -20upx;
-							right: -20upx;
+							right: -45upx;
 						}
 					}
 

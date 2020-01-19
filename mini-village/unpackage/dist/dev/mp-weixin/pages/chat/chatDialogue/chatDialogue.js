@@ -279,7 +279,7 @@ var _default = { data: function data() {return { InputBottom: 0, chatData: [], n
       query.exec(function (res) {
         uni.pageScrollTo({
           duration: 0,
-          scrollTop: res[0].bottom });
+          scrollTop: 9999 });
 
       });
     },

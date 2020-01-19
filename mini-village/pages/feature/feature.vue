@@ -20,7 +20,7 @@
 					<text class="feature-p">{{item.img_des}}</text>
 				</view>
 				<!-- no-photo -->
-				<view class="no-photo" v-if="picInfo.length < 0">
+				<view class="no-photo" v-if="picInfo.length == 0">
 					<image src="../../static/img/no_data.png" mode=""></image>
 				</view>
 			</view>
@@ -58,7 +58,7 @@
 				<!-- 悬浮按钮e-->
 				
 				<!-- no-photo -->
-				<view class="no-photo" v-if="msgInfo.length < 0">
+				<view class="no-photo" v-if="msgInfo.length == 0">
 					<image src="../../static/img/no_data.png" mode=""></image>
 				</view>
 			</view>
@@ -121,7 +121,7 @@
 					</view>
 				</view>
 				<!-- no-photo -->
-				<view class="no-photo" v-if="videoInfo.length < 0">
+				<view class="no-photo" v-if="videoInfo.length == 0">
 					<image src="../../static/img/no_data.png" mode=""></image>
 				</view>
 			</view>

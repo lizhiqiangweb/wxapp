@@ -147,6 +147,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+
+
 __webpack_require__(/*! ../../../static/common.css */ 30); //
 //
 //
@@ -169,10 +172,10 @@ __webpack_require__(/*! ../../../static/common.css */ 30); //
 //
 //
 //
-var _default = { data: function data() {return { TabCur: 0, scrollLeft: 0, value: '0', relateBg: "".concat(this.$env.img1, "ranking.png"), publish: "".concat(this.$env.img1, "publish@2x.png"), share: "".concat(this.$env.img1, "relay@2x.png"), msg: "".concat(this.$env.img1, "comment@2x.png"), click: "".concat(this.$env.img1, "help@2x.png"), add: "".concat(this.$env.img1, "weixin_add@2x.png"), weixin_icon: "".concat(this.$env.img1, "weixin_icon@2x.png"), chat_p: "".concat(this.$env.img1, "chat_p@2x.png"), PageIndex: 1, PageSize: 10, listInfo: [] };
-
-  },
-  methods: {
+//
+//
+//
+var _default = { data: function data() {return { TabCur: 0, scrollLeft: 0, value: '0', relateBg: "".concat(this.$env.img1, "ranking.png"), publish: "".concat(this.$env.img1, "publish@2x.png"), share: "".concat(this.$env.img1, "relay@2x.png"), msg: "".concat(this.$env.img1, "comment@2x.png"), click: "".concat(this.$env.img1, "help@2x.png"), add: "".concat(this.$env.img1, "weixin_add@2x.png"), weixin_icon: "".concat(this.$env.img1, "weixin_icon@2x.png"), chat_p: "".concat(this.$env.img1, "chat_p@2x.png"), PageIndex: 1, PageSize: 10, listInfo: [] };}, methods: {
     listInit: function listInit() {
       var that = this;
       that.$request.httpTokenRequest(that.$api.getFriendList, that.$api.get, {

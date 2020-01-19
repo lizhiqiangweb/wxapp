@@ -4,7 +4,7 @@
 			<view class="cu-item" v-for="(item, index) in chatData" :key="index" :class="item.content.from_id==userInfo.member_mobile ? 'self':'left'">
 				<view v-if="item.content.from_id!==userInfo.member_mobile" class="cu-avatar radius" :style="{backgroundImage:'url(' + item.imgUrl + ')'}"></view>
 				<view class="main">
-					<view class="content bg-orange shadow">
+					<view class="content shadow" :class="item.content.from_id==userInfo.member_mobile?'bg-orange':'bg-white' ">
 						<text>{{item.content.msg_body.text}}</text>
 					</view>
 				</view>
@@ -167,10 +167,9 @@
 				let query = uni.createSelectorQuery();
 				query.select('#msglistview').boundingClientRect();
 				query.exec((res) => {
-					console.log(res)
 					uni.pageScrollTo({
 						duration: 0,
-						scrollTop: res[0].bottom
+						scrollTop: 9999
 					});
 				});
 			},

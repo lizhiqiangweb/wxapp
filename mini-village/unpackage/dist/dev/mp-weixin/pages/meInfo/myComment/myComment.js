@@ -157,8 +157,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
-
 __webpack_require__(/*! ../../../static/common.css */ 30); //
 //
 //
@@ -191,9 +189,10 @@ __webpack_require__(/*! ../../../static/common.css */ 30); //
 //
 //
 //
-//
-//
-var _default = { data: function data() {return { PageIndex: 1, PageSize: 10, commentList: [] };}, methods: { newsInit: function newsInit() {var that = this;that.$request.httpTokenRequest(that.$api.getSpMessageByType, that.$api.get, { Key: that.$api.Key, Client: that.$api.CLIENT, Version: that.$api.VERSION, type: 6, PageIndex: that.PageIndex, PageSize: that.PageSize }).then(function (res) {if (res.data.flag === 200) {that.commentList = res.data.data.data.data_list;}});} }, onLoad: function onLoad() {this.userInfo = uni.getStorageSync('userInfo');this.$api.Key = this.userInfo.key;
+var _default = { data: function data() {return { PageIndex: 1, PageSize: 10, commentList: [] };}, methods: { newsInit: function newsInit() {var that = this;that.$request.httpTokenRequest(that.$api.getSpMessageByType, that.$api.get, { Key: that.$api.Key, Client: that.$api.CLIENT, Version: that.$api.VERSION, type: 6, PageIndex: that.PageIndex, PageSize: that.PageSize }).then(function (res) {console.log(res);if (res.data.flag === 200) {that.commentList = res.data.data.data.data_list;}});} },
+  onLoad: function onLoad() {
+    this.userInfo = uni.getStorageSync('userInfo');
+    this.$api.Key = this.userInfo.key;
     this.newsInit();
   } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))

@@ -211,6 +211,22 @@ input {
 	}
 }
 
+.no-data {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	margin: 0 auto;
+}
+
+.no-data image {
+	width: 436rpx;
+	height: 346rpx;
+	margin: 120rpx auto 0;
+}
+
 .chat-list.data-v-0f9bd8f2 {
   position: relative;
   margin: 0 0 88rpx 0;

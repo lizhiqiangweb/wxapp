@@ -102,6 +102,11 @@
 			"style": {
 				"navigationBarTitleText": "村消息"
 			}
+		},{
+			"path": "pages/meInfo/systemNews/systemNews",
+			"style": {
+				"navigationBarTitleText": "系统消息"
+			}
 		}, {
 			"path": "pages/meInfo/myLike/myLike",
 			"style": {

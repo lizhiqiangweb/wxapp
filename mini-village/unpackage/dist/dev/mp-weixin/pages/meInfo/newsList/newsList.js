@@ -204,6 +204,7 @@ var _default = { data: function data() {return { newsList: [{ 'title': '评论',
         Client: that.$api.CLIENT,
         Version: that.$api.VERSION }).
       then(function (res) {
+        console.log(res);
         if (res.data.flag === 200) {
           that.newsInfo = res.data.data;
           that.newsList[0].num = that.newsInfo.comment_count;
@@ -226,9 +227,6 @@ var _default = { data: function data() {return { newsList: [{ 'title': '评论',
           that.newsList[4].content = that.newsInfo.neares_system_count_message_info.content;
           that.newsList[4].time = that.newsInfo.neares_system_count_message_info.date_desc;
 
-
-
-
         }
       });
 
@@ -250,6 +248,10 @@ var _default = { data: function data() {return { newsList: [{ 'title': '评论',
       } else if (id == 4) {
         uni.navigateTo({
           url: '../villageNews/villageNews' });
+
+      } else if (id == 5) {
+        uni.navigateTo({
+          url: '../systemNews/systemNews' });
 
       }
 

@@ -1,6 +1,5 @@
 <template>
 	<view class="chat-list">
-
 		<view class="chat-list-in" v-for="(item,index) in commentList" :key="index">
 			<view class="chat-top flexs">
 				<view class="evaluate-msg-head-left flexs">
@@ -23,12 +22,11 @@
 					</view>
 				</view>
 			</view>
-
 		</view>
-		
-		
-		
-		
+		<!-- no-data -->
+		<view class="no-data" v-if="commentList.length == 0">
+			<image src="../../../static/img/no_data.png" mode=""></image>
+		</view>
 	</view>
 </template>
 
@@ -57,6 +55,7 @@
 					PageIndex:that.PageIndex,
 					PageSize:that.PageSize
 				}).then((res) => {
+					console.log(res)
 					if (res.data.flag === 200) {
 						that.commentList=res.data.data.data.data_list
 					}
@@ -78,6 +77,7 @@
 	}
 </style>
 <style lang="less" scoped>
+	
 	.chat-list {
 		// padding: 30upx;
 		position: relative;
@@ -200,7 +200,6 @@
 				}
 			}
 		}
-
 
 	}
 </style>

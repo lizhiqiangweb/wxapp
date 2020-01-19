@@ -23,17 +23,16 @@
 					</view>
 				</view>
 			</view>
-
 		</view>
-
-
-
+		<!-- no-data -->
+		<view class="no-data" v-if="likeList.length == 0">
+			<image src="../../../static/img/no_data.png" mode=""></image>
+		</view>
 	</view>
 </template>
 
 <script>
 	import '../../../static/common.css';
-
 
 	export default {
 
@@ -55,6 +54,7 @@
 					PageIndex: that.PageIndex,
 					PageSize: that.PageSize
 				}).then((res) => {
+					console.log(res)
 					if (res.data.flag === 200) {
 						that.likeList=res.data.data.data.data_list
 					}

@@ -138,13 +138,30 @@ var _default = {
       var userInfo = uni.getStorageSync('userInfo');
       var username = userInfo.member_mobile;
       var password = userInfo.member_mobile + '1';
-      console.log(userInfo);
+      var address = '';
+      uni.getLocation({
+        type: 'gcj02',
+        success: function success(data) {
+          that.$request.httpTokenRequest(that.$api.currentCity, that.$api.get, {
+            latitude: data.latitude,
+            longitude: data.longitude,
+            Key: that.$api.Key,
+            Client: that.$api.CLIENT,
+            Version: that.$api.VERSION,
+            searchType: 1 }).
+          then(function (res) {
+            if (res.data.flag === 200) {
+              that.address = res.data.data.area_detail;
+            } else {}
+          });
+        } });
+
       that.JIM.register({
         'username': username,
         'password': password,
         'is_md5': false,
         // 'extras' : {'username': username,'password': password},
-        'address': '深圳' }).
+        'address': that.address }).
       onSuccess(function (data) {
         console.log('注册成功', data);
         that.JIM.login({

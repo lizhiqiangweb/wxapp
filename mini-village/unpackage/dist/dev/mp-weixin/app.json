@@ -20,6 +20,7 @@
     "pages/meInfo/personInfo/personInfo",
     "pages/order/orderList/orderList",
     "pages/meInfo/villageNews/villageNews",
+    "pages/meInfo/systemNews/systemNews",
     "pages/meInfo/myLike/myLike",
     "pages/meInfo/myComment/myComment",
     "pages/meInfo/newsList/newsList",
@@ -98,6 +99,5 @@
   },
   "usingComponents": {
     "cu-custom": "/static/colorui/components/cu-custom"
-  },
-  "sitemapLocation": "sitemap82.json"
+  }
 }

@@ -4,7 +4,7 @@
 			<view class="cu-item" v-for="(item, index) in chatData" :key="index" :class="item.content.from_id==news.username ? 'left':'self'">
 				<view v-if="item.content.from_id==news.username" class="cu-avatar radius" :style="{backgroundImage:'url(' + avatarImgUrl + ')'}"></view>
 				<view class="main">
-					<view class="content bg-orange shadow">
+					<view class="content shadow" :class="item.content.from_id==news.username?'bg-orange':'bg-white' ">
 						<text> <!-- @longtap="withdraw()" -->
 							{{item.content.msg_body.text}}
 						</text>
@@ -138,7 +138,7 @@
 				query.exec((res) => {
 					uni.pageScrollTo({
 						duration: 0,
-						scrollTop: res[0].bottom
+						scrollTop: 9999
 					});
 				});
 			},

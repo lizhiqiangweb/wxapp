@@ -211,6 +211,22 @@ input {
 	}
 }
 
+.no-data {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	margin: 0 auto;
+}
+
+.no-data image {
+	width: 436rpx;
+	height: 346rpx;
+	margin: 120rpx auto 0;
+}
+
 .details.data-v-53f8fdab {
   width: 100%;
   background-color: #fff;

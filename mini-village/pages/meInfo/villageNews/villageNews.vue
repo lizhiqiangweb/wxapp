@@ -17,6 +17,10 @@
 				</view>
 			</view>
 		</view>
+		<!-- no-data -->
+		<view class="no-data" v-if="commentList.length == 0">
+			<image src="../../../static/img/no_data.png" mode=""></image>
+		</view>
 	</view>
 </template>
 
@@ -44,7 +48,7 @@
 					PageIndex: that.PageIndex,
 					PageSize: that.PageSize
 				}).then((res) => {
-					
+					console.log(res)
 					if (res.data.flag === 200) {
 						that.commentList=res.data.data.data.data_list
 						console.log(that.commentList)

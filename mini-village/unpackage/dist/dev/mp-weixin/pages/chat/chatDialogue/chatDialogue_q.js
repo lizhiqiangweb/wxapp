@@ -233,10 +233,9 @@ var _default = { data: function data() {return { InputBottom: 0, chatData: [], c
       var query = uni.createSelectorQuery();
       query.select('#msglistview').boundingClientRect();
       query.exec(function (res) {
-        console.log(res);
         uni.pageScrollTo({
           duration: 0,
-          scrollTop: res[0].bottom });
+          scrollTop: 9999 });
 
       });
     },

@@ -211,6 +211,22 @@ input {
 	}
 }
 
+.no-data {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	margin: 0 auto;
+}
+
+.no-data image {
+	width: 436rpx;
+	height: 346rpx;
+	margin: 120rpx auto 0;
+}
+
 .chat-list.data-v-5c677820 {
   position: relative;
   padding-top: 20rpx;
@@ -256,7 +272,7 @@ input {
   color: #fff;
   position: absolute;
   top: -20rpx;
-  right: -20rpx;
+  right: -45rpx;
 }
 .chat-list .chat-top .evaluate-msg-head-left .head-info-name .head-info-nike-in.data-v-5c677820 {
   display: inline-block;
